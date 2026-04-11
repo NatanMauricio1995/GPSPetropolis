@@ -1,0 +1,1867 @@
+{
+  "Águas do Imperador": {
+    "lat": -22.51263,
+    "lng": -43.17239,
+    "arestas": [
+      {
+        "destino": "Rua da feira",
+        "distancia": 588.58,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "residencial",
+        "lat": -22.50739,
+        "lng": -43.16999
+      },
+      {
+        "destino": "Rua Teresa",
+        "distancia": 437.63,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51473,
+        "lng": -43.17541
+      }
+    ]
+  },
+  "Avenida Ipiranga": {
+    "lat": -22.50493,
+    "lng": -43.17821,
+    "arestas": [
+      {
+        "destino": "Catedral",
+        "distancia": 232.25,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial forte",
+        "lat": -22.50614,
+        "lng": -43.17984
+      },
+      {
+        "destino": "Rua Alberto Torres",
+        "distancia": 922.99,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial",
+        "lat": -22.50345,
+        "lng": -43.16983
+      }
+    ]
+  },
+  "Avenida Piabanha": {
+    "lat": -22.503,
+    "lng": -43.19057,
+    "arestas": [
+      {
+        "destino": "Bairro Moinho Preto",
+        "distancia": 4440.91,
+        "caminhao": 0,
+        "geol": 6,
+        "social": 3,
+        "hidr": 4,
+        "tipo": "residencial",
+        "lat": -22.48658,
+        "lng": -43.21535
+      },
+      {
+        "destino": "Hospital Santa Teresa",
+        "distancia": 503.62,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.50603,
+        "lng": -43.19345
+      }
+    ]
+  },
+  "Avenida Portugal": {
+    "lat": -22.51863,
+    "lng": -43.19123,
+    "arestas": [
+      {
+        "destino": "Duas Pontes",
+        "distancia": 473.82,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.52081,
+        "lng": -43.18839
+      },
+      {
+        "destino": "Rua Gonçalves Dias",
+        "distancia": 222.31,
+        "caminhao": 1,
+        "geol": 0,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51663,
+        "lng": -43.19144
+      },
+      {
+        "destino": "SMH",
+        "distancia": 335.83,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.51976,
+        "lng": -43.19311
+      }
+    ]
+  },
+  "Avenida Tiradentes": {
+    "lat": -22.50647,
+    "lng": -43.17738,
+    "arestas": [
+      {
+        "destino": "Avenida Ipiranga",
+        "distancia": 190.1,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.50493,
+        "lng": -43.17821
+      }
+    ]
+  },
+  "Bairro Bingen": {
+    "lat": -22.51309,
+    "lng": -43.22038,
+    "arestas": [
+      {
+        "destino": "Vila Militar",
+        "distancia": 2909.89,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.50955,
+        "lng": -43.19532
+      }
+    ]
+  },
+  "Bairro Castelânea": {
+    "lat": -22.5322,
+    "lng": -43.19387,
+    "arestas": [
+      {
+        "destino": "Patrone",
+        "distancia": 406.17,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.52944,
+        "lng": -43.19659
+      },
+      {
+        "destino": "Ponte Fones",
+        "distancia": 785.59,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.53354,
+        "lng": -43.19999
+      },
+      {
+        "destino": "Praça Pasteur",
+        "distancia": 1531.93,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.52271,
+        "lng": -43.18338
+      }
+    ]
+  },
+  "Bairro Moinho Preto": {
+    "lat": -22.48658,
+    "lng": -43.21535,
+    "arestas": [
+      {
+        "destino": "Avenida Piabanha",
+        "distancia": 4440.91,
+        "caminhao": 0,
+        "geol": 6,
+        "social": 3,
+        "hidr": 4,
+        "tipo": "residencial",
+        "lat": -22.503,
+        "lng": -43.19057
+      }
+    ]
+  },
+  "Bairro Valparaíso": {
+    "lat": -22.52121,
+    "lng": -43.19616,
+    "arestas": [
+      {
+        "destino": "Batata Frita",
+        "distancia": 443.9,
+        "caminhao": 0,
+        "geol": 8,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.5224,
+        "lng": -43.19796
+      },
+      {
+        "destino": "Instituto Teológico Franciscano",
+        "distancia": 292.12,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "residencial",
+        "lat": -22.52296,
+        "lng": -43.19407
+      },
+      {
+        "destino": "SMH",
+        "distancia": 263.02,
+        "caminhao": 0,
+        "geol": 6,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51976,
+        "lng": -43.19311
+      }
+    ]
+  },
+  "Bar Bárbaros": {
+    "lat": -22.53099,
+    "lng": -43.21516,
+    "arestas": [
+      {
+        "destino": "BR 040",
+        "distancia": 488.33,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 0,
+        "tipo": "arterial",
+        "lat": -22.53375,
+        "lng": -43.21892
+      },
+      {
+        "destino": "FAETERJ",
+        "distancia": 286.94,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "coletora",
+        "lat": -22.52931,
+        "lng": -43.21659
+      },
+      {
+        "destino": "Lago do Quitandinha",
+        "distancia": 351.17,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.53032,
+        "lng": -43.21235
+      }
+    ]
+  },
+  "Batalhão": {
+    "lat": -22.51625,
+    "lng": -43.20052,
+    "arestas": [
+      {
+        "destino": "Rua Gonçalves Dias",
+        "distancia": 1241.63,
+        "caminhao": 0,
+        "geol": 4,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51663,
+        "lng": -43.19144
+      },
+      {
+        "destino": "Vila Militar",
+        "distancia": 1647.25,
+        "caminhao": 0,
+        "geol": 8,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "residencial",
+        "lat": -22.50955,
+        "lng": -43.19532
+      }
+    ]
+  },
+  "Batata Frita": {
+    "lat": -22.5224,
+    "lng": -43.19796,
+    "arestas": [
+      {
+        "destino": "Bairro Valparaíso",
+        "distancia": 443.9,
+        "caminhao": 0,
+        "geol": 8,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.52121,
+        "lng": -43.19616
+      },
+      {
+        "destino": "Palácio Quitandinha",
+        "distancia": 1674.13,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.52593,
+        "lng": -43.21224
+      },
+      {
+        "destino": "Rua Dr. Thouzet",
+        "distancia": 1764.41,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 3,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.53287,
+        "lng": -43.20471
+      }
+    ]
+  },
+  "Big House": {
+    "lat": -22.51623,
+    "lng": -43.16801,
+    "arestas": [
+      {
+        "destino": "Águas do Imperador",
+        "distancia": 719.11,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51263,
+        "lng": -43.17239
+      },
+      {
+        "destino": "Hiper Shopping",
+        "distancia": 868.93,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.52351,
+        "lng": -43.17089
+      }
+    ]
+  },
+  "Bohemia": {
+    "lat": -22.50731,
+    "lng": -43.18503,
+    "arestas": [
+      {
+        "destino": "Avenida Barão do Rio Branco",
+        "distancia": 550.56,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.50386,
+        "lng": -43.18211
+      },
+      {
+        "destino": "Igreja do Sagrado",
+        "distancia": 395.69,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.50755,
+        "lng": -43.18823
+      },
+      {
+        "destino": "Praça da Liberdade",
+        "distancia": 339.95,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial",
+        "lat": -22.50955,
+        "lng": -43.1828
+      }
+    ]
+  },
+  "Bosque do Imperador": {
+    "lat": -22.50754,
+    "lng": -43.1732,
+    "arestas": [
+      {
+        "destino": "Correio",
+        "distancia": 189.13,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 2,
+        "hidr": 1,
+        "tipo": "arterial",
+        "lat": -22.50902,
+        "lng": -43.17316
+      },
+      {
+        "destino": "Rua Alberto Torres",
+        "distancia": 619.29,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 2,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.50345,
+        "lng": -43.16983
+      }
+    ]
+  },
+  "BR 040": {
+    "lat": -22.53375,
+    "lng": -43.21892,
+    "arestas": [
+      {
+        "destino": "Bar Bárbaros",
+        "distancia": 488.33,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 0,
+        "tipo": "arterial",
+        "lat": -22.53099,
+        "lng": -43.21516
+      },
+      {
+        "destino": "Rodoviária",
+        "distancia": 2273.96,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "rodovia",
+        "lat": -22.53375,
+        "lng": -43.21892
+      }
+    ]
+  },
+  "Catedral": {
+    "lat": -22.50614,
+    "lng": -43.17984,
+    "arestas": [
+      {
+        "destino": "Avenida Barão do Rio Branco",
+        "distancia": 350.7,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.50386,
+        "lng": -43.18211
+      },
+      {
+        "destino": "Avenida Tiradentes",
+        "distancia": 256.08,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.50647,
+        "lng": -43.17738
+      },
+      {
+        "destino": "Centro",
+        "distancia": 695.65,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial forte",
+        "lat": -22.51013,
+        "lng": -43.1754
+      },
+      {
+        "destino": "Praça da Liberdade",
+        "distancia": 507.59,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial forte",
+        "lat": -22.50955,
+        "lng": -43.1828
+      }
+    ]
+  },
+  "Cemitério Fabrício de Matos": {
+    "lat": -22.51146,
+    "lng": -43.18957,
+    "arestas": [
+      {
+        "destino": "Igreja do Sagrado",
+        "distancia": 501.37,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 2,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.50755,
+        "lng": -43.18823
+      },
+      {
+        "destino": "Rua Rockfeller",
+        "distancia": 480.87,
+        "caminhao": 0,
+        "geol": 5,
+        "social": 2,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.51356,
+        "lng": -43.18869
+      }
+    ]
+  },
+  "Centro": {
+    "lat": -22.51013,
+    "lng": -43.1754,
+    "arestas": [
+      {
+        "destino": "Avenida Tiradentes",
+        "distancia": 439.95,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.50647,
+        "lng": -43.17738
+      },
+      {
+        "destino": "Bosque do Imperador",
+        "distancia": 459.66,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 2,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.50754,
+        "lng": -43.1732
+      },
+      {
+        "destino": "Correio",
+        "distancia": 262.59,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial forte",
+        "lat": -22.50902,
+        "lng": -43.17316
+      },
+      {
+        "destino": "Tribuna",
+        "distancia": 252.33,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial forte",
+        "lat": -22.51128,
+        "lng": -43.17755
+      }
+    ]
+  },
+  "Correio": {
+    "lat": -22.50902,
+    "lng": -43.17316,
+    "arestas": [
+      {
+        "destino": "Centro",
+        "distancia": 262.59,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial forte",
+        "lat": -22.51013,
+        "lng": -43.1754
+      },
+      {
+        "destino": "Igreja do Rosário",
+        "distancia": 372.94,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.50739,
+        "lng": -43.16999
+      },
+      {
+        "destino": "Rua Paulo Barbosa",
+        "distancia": 62.24,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 0,
+        "tipo": "arterial",
+        "lat": -22.50887,
+        "lng": -43.17257
+      }
+    ]
+  },
+  "Duas Pontes": {
+    "lat": -22.52081,
+    "lng": -43.18839,
+    "arestas": [
+      {
+        "destino": "Avenida Portugal",
+        "distancia": 473.82,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.51863,
+        "lng": -43.19123
+      },
+      {
+        "destino": "Praça Pasteur",
+        "distancia": 601.4,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.52271,
+        "lng": -43.18338
+      },
+      {
+        "destino": "UPA",
+        "distancia": 693.54,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.51671,
+        "lng": -43.18375
+      },
+      {
+        "destino": "Volkswagen",
+        "distancia": 1212.35,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial",
+        "lat": -22.52962,
+        "lng": -43.19616
+      }
+    ]
+  },
+  "FAETERJ": {
+    "lat": -22.52931,
+    "lng": -43.21659,
+    "arestas": [
+      {
+        "destino": "Bar Bárbaros",
+        "distancia": 286.94,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "coletora",
+        "lat": -22.53099,
+        "lng": -43.21516
+      },
+      {
+        "destino": "Palácio Quitandinha",
+        "distancia": 630.44,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.52593,
+        "lng": -43.21224
+      }
+    ]
+  },
+  "Fórum Antigo": {
+    "lat": -22.511,
+    "lng": -43.179,
+    "arestas": [
+      {
+        "destino": "Praça da Liberdade",
+        "distancia": 491.53,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial forte",
+        "lat": -22.50955,
+        "lng": -43.1828
+      },
+      {
+        "destino": "Shopping Pátio Petrópolis",
+        "distancia": 144.66,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.51276,
+        "lng": -43.17776
+      },
+      {
+        "destino": "Tribuna",
+        "distancia": 159.27,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial",
+        "lat": -22.51128,
+        "lng": -43.17755
+      }
+    ]
+  },
+  "Gehren": {
+    "lat": -22.50399,
+    "lng": -43.189,
+    "arestas": [
+      {
+        "destino": "Avenida Piabanha",
+        "distancia": 168.43,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.503,
+        "lng": -43.19057
+      },
+      {
+        "destino": "Palácio de Cristal",
+        "distancia": 691.74,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.50472,
+        "lng": -43.18318
+      }
+    ]
+  },
+  "Hiper Shopping": {
+    "lat": -22.52351,
+    "lng": -43.17089,
+    "arestas": [
+      {
+        "destino": "Big House",
+        "distancia": 868.93,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.51623,
+        "lng": -43.16801
+      },
+      {
+        "destino": "Igreja de Santo Antônio",
+        "distancia": 555.82,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52789,
+        "lng": -43.17391
+      }
+    ]
+  },
+  "Hospital Santa Teresa": {
+    "lat": -22.50603,
+    "lng": -43.19345,
+    "arestas": [
+      {
+        "destino": "Vila Militar",
+        "distancia": 330.81,
+        "caminhao": 1,
+        "geol": 6,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.50955,
+        "lng": -43.19532
+      },
+      {
+        "destino": "Vila São José",
+        "distancia": 213.19,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 7,
+        "tipo": "arterial",
+        "lat": -22.50754,
+        "lng": -43.19153
+      }
+    ]
+  },
+  "Igreja de Santo Antônio": {
+    "lat": -22.52789,
+    "lng": -43.17391,
+    "arestas": [
+      {
+        "destino": "Hiper Shopping",
+        "distancia": 574.16,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52351,
+        "lng": -43.17089
+      },
+      {
+        "destino": "Praça Pasteur",
+        "distancia": 1414.42,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52271,
+        "lng": -43.18338
+      }
+    ]
+  },
+  "Igreja do Rosário": {
+    "lat": -22.50739,
+    "lng": -43.16999,
+    "arestas": [
+      {
+        "destino": "Correio",
+        "distancia": 372.94,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.50902,
+        "lng": -43.17316
+      },
+      {
+        "destino": "Rua Alberto Torres",
+        "distancia": 673.69,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.50345,
+        "lng": -43.16983
+      }
+    ]
+  },
+  "Igreja do Sagrado": {
+    "lat": -22.50755,
+    "lng": -43.18823,
+    "arestas": [
+      {
+        "destino": "Bohemia",
+        "distancia": 395.69,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.50731,
+        "lng": -43.18503
+      },
+      {
+        "destino": "Cemitério Fabrício de Matos",
+        "distancia": 501.37,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 2,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51146,
+        "lng": -43.18957
+      },
+      {
+        "destino": "Gehren",
+        "distancia": 416.93,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.50399,
+        "lng": -43.189
+      }
+    ]
+  },
+  "Instituto Teológico Franciscano": {
+    "lat": -22.52296,
+    "lng": -43.19407,
+    "arestas": [
+      {
+        "destino": "Bairro Valparaíso",
+        "distancia": 292.12,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "residencial",
+        "lat": -22.52121,
+        "lng": -43.19616
+      },
+      {
+        "destino": "Volkswagen",
+        "distancia": 888.75,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52962,
+        "lng": -43.19616
+      }
+    ]
+  },
+  "Lago do Quitandinha": {
+    "lat": -22.53032,
+    "lng": -43.21235,
+    "arestas": [
+      {
+        "destino": "Bar Bárbaros",
+        "distancia": 351.17,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.53099,
+        "lng": -43.21516
+      },
+      {
+        "destino": "Palácio Quitandinha",
+        "distancia": 533.28,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52593,
+        "lng": -43.21224
+      },
+      {
+        "destino": "Rua Dr. Thouzet",
+        "distancia": 1039.34,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.53287,
+        "lng": -43.20471
+      }
+    ]
+  },
+  "Palácio de Cristal": {
+    "lat": -22.50472,
+    "lng": -43.18318,
+    "arestas": [
+      {
+        "destino": "Bohemia",
+        "distancia": 346.42,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.50731,
+        "lng": -43.18503
+      },
+      {
+        "destino": "Gehren",
+        "distancia": 691.74,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.50399,
+        "lng": -43.189
+      }
+    ]
+  },
+  "Palácio Itaboraí": {
+    "lat": -22.51544,
+    "lng": -43.18741,
+    "arestas": [
+      {
+        "destino": "Rua Gonçalves Dias",
+        "distancia": 437.82,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.51663,
+        "lng": -43.19144
+      },
+      {
+        "destino": "Rua Rockfeller",
+        "distancia": 246.14,
+        "caminhao": 0,
+        "geol": 4,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "residencial",
+        "lat": -22.51356,
+        "lng": -43.18869
+      },
+      {
+        "destino": "Terra Santa",
+        "distancia": 208.09,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "coletora",
+        "lat": -22.51548,
+        "lng": -43.18548
+      }
+    ]
+  },
+  "Palácio Quitandinha": {
+    "lat": -22.52593,
+    "lng": -43.21224,
+    "arestas": [
+      {
+        "destino": "Batata Frita",
+        "distancia": 1674.13,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.5224,
+        "lng": -43.19796
+      },
+      {
+        "destino": "Lago do Quitandinha",
+        "distancia": 533.28,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.53032,
+        "lng": -43.21235
+      },
+      {
+        "destino": "FAETERJ",
+        "distancia": 630.44,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.52931,
+        "lng": -43.21659
+      }
+    ]
+  },
+  "Patrone": {
+    "lat": -22.52944,
+    "lng": -43.19659,
+    "arestas": [
+      {
+        "destino": "Bairro Castelânea",
+        "distancia": 406.17,
+        "caminhao": 0,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.5322,
+        "lng": -43.19387
+      },
+      {
+        "destino": "Ponte Fones",
+        "distancia": 594.21,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 7,
+        "tipo": "arterial",
+        "lat": -22.53354,
+        "lng": -43.19999
+      },
+      {
+        "destino": "Volkswagen",
+        "distancia": 84.2,
+        "caminhao": 1,
+        "geol": 0,
+        "social": 0,
+        "hidr": 8,
+        "tipo": "arterial",
+        "lat": -22.52962,
+        "lng": -43.19616
+      }
+    ]
+  },
+  "Ponte Fones": {
+    "lat": -22.53354,
+    "lng": -43.19999,
+    "arestas": [
+      {
+        "destino": "Bairro Castelânea",
+        "distancia": 785.59,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.5322,
+        "lng": -43.19387
+      },
+      {
+        "destino": "Patrone",
+        "distancia": 594.21,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 7,
+        "tipo": "arterial",
+        "lat": -22.52944,
+        "lng": -43.19659
+      },
+      {
+        "destino": "Rua Dr. Thouzet",
+        "distancia": 536.79,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.53287,
+        "lng": -43.20471
+      }
+    ]
+  },
+  "Praça da Liberdade": {
+    "lat": -22.50955,
+    "lng": -43.1828,
+    "arestas": [
+      {
+        "destino": "Terra Santa",
+        "distancia": 715.52,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "arterial",
+        "lat": -22.51548,
+        "lng": -43.18548
+      },
+      {
+        "destino": "Bohemia",
+        "distancia": 339.95,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial",
+        "lat": -22.50731,
+        "lng": -43.18503
+      },
+      {
+        "destino": "Catedral",
+        "distancia": 507.59,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial forte",
+        "lat": -22.50614,
+        "lng": -43.17984
+      }
+    ]
+  },
+  "Praça Pasteur": {
+    "lat": -22.52271,
+    "lng": -43.18338,
+    "arestas": [
+      {
+        "destino": "Bairro Castelânea",
+        "distancia": 1531.93,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.5322,
+        "lng": -43.19387
+      },
+      {
+        "destino": "Duas Pontes",
+        "distancia": 601.4,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.52081,
+        "lng": -43.18839
+      },
+      {
+        "destino": "Igreja de Santo Antônio",
+        "distancia": 1414.42,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52789,
+        "lng": -43.17391
+      },
+      {
+        "destino": "Rua 24 de Maio",
+        "distancia": 1261.77,
+        "caminhao": 0,
+        "geol": 5,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51457,
+        "lng": -43.17576
+      }
+    ]
+  },
+  "Rodoviária": {
+    "lat": -22.53375,
+    "lng": -43.21892,
+    "arestas": [
+      {
+        "destino": "Bairro Bingen",
+        "distancia": 1132.0,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51309,
+        "lng": -43.22038
+      },
+      {
+        "destino": "Bairro Moinho Preto",
+        "distancia": 4715.74,
+        "caminhao": 1,
+        "geol": 6,
+        "social": 3,
+        "hidr": 3,
+        "tipo": "rodovia",
+        "lat": -22.48658,
+        "lng": -43.21535
+      }
+    ]
+  },
+  "Rua 24 de Maio": {
+    "lat": -22.51457,
+    "lng": -43.17576,
+    "arestas": [
+      {
+        "destino": "Praça Pasteur",
+        "distancia": 1261.77,
+        "caminhao": 0,
+        "geol": 5,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.52271,
+        "lng": -43.18338
+      },
+      {
+        "destino": "Rua Teresa",
+        "distancia": 41.89,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 3,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51473,
+        "lng": -43.17541
+      },
+      {
+        "destino": "Shopping Pátio Petrópolis",
+        "distancia": 306.93,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 3,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.51276,
+        "lng": -43.17776
+      }
+    ]
+  },
+  "Rua Alberto Torres": {
+    "lat": -22.50345,
+    "lng": -43.16983,
+    "arestas": [
+      {
+        "destino": "Avenida Ipiranga",
+        "distancia": 922.99,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial",
+        "lat": -22.50493,
+        "lng": -43.17821
+      },
+      {
+        "destino": "Bosque do Imperador",
+        "distancia": 619.29,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 2,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.50754,
+        "lng": -43.1732
+      }
+    ]
+  },
+  "Rua da Feira": {
+    "lat": 22.5073917,
+    "lng": 43.1699889,
+    "arestas": [
+      {
+        "destino": "Águas do Imperador",
+        "distancia": 588.58,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "residencial",
+        "lat": -22.51263,
+        "lng": -43.17239
+      },
+      {
+        "destino": "Igreja do Rosário",
+        "distancia": 187.29,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 7,
+        "tipo": "coletora",
+        "lat": -22.50739,
+        "lng": -43.16999
+      },
+      {
+        "destino": "Rua Santos Dumont",
+        "distancia": 89.77,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 7,
+        "tipo": "residencial",
+        "lat": -22.50858,
+        "lng": -43.16862
+      }
+    ]
+  },
+  "Rua Dr. Thouzet": {
+    "lat": -22.53287,
+    "lng": -43.20471,
+    "arestas": [
+      {
+        "destino": "Lago do Quitandinha",
+        "distancia": 1039.34,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.53032,
+        "lng": -43.21235
+      },
+      {
+        "destino": "Batata Frita",
+        "distancia": 1764.41,
+        "caminhao": 0,
+        "geol": 7,
+        "social": 3,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.5224,
+        "lng": -43.19796
+      },
+      {
+        "destino": "Ponte Fones",
+        "distancia": 536.79,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 3,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.53354,
+        "lng": -43.19999
+      }
+    ]
+  },
+  "Rua Gonçalves Dias": {
+    "lat": -22.51663,
+    "lng": -43.19144,
+    "arestas": [
+      {
+        "destino": "Avenida Portugal",
+        "distancia": 222.31,
+        "caminhao": 1,
+        "geol": 0,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51863,
+        "lng": -43.19123
+      },
+      {
+        "destino": "Batalhão",
+        "distancia": 1241.63,
+        "caminhao": 0,
+        "geol": 4,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.51625,
+        "lng": -43.20052
+      },
+      {
+        "destino": "Palácio Itaboraí",
+        "distancia": 437.82,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.51544,
+        "lng": -43.18741
+      },
+      {
+        "destino": "SMH",
+        "distancia": 497.2,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.51976,
+        "lng": -43.19311
+      }
+    ]
+  },
+  "Rua Paulo Barbosa": {
+    "lat": -22.50887,
+    "lng": -43.17257,
+    "arestas": [
+      {
+        "destino": "Rua da feira",
+        "distancia": 343.09,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.50739,
+        "lng": -43.16999
+      }
+    ]
+  },
+  "Rua Rockfeller": {
+    "lat": -22.51356,
+    "lng": -43.18869,
+    "arestas": [
+      {
+        "destino": "Cemitério Fabrício de Matos",
+        "distancia": 480.87,
+        "caminhao": 0,
+        "geol": 5,
+        "social": 2,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.51146,
+        "lng": -43.18957
+      },
+      {
+        "destino": "Palácio Itaboraí",
+        "distancia": 246.14,
+        "caminhao": 0,
+        "geol": 4,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "residencial",
+        "lat": -22.51544,
+        "lng": -43.18741
+      },
+      {
+        "destino": "Rua Gonçalves Dias",
+        "distancia": 452.48,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51663,
+        "lng": -43.19144
+      }
+    ]
+  },
+  "Rua Santos Dumont": {
+    "lat": -22.50858,
+    "lng": -43.16862,
+    "arestas": [
+      {
+        "destino": "Big House",
+        "distancia": 1048.27,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "coletora",
+        "lat": -22.51623,
+        "lng": -43.16801
+      }
+    ]
+  },
+  "Rua Teresa": {
+    "lat": -22.51473,
+    "lng": -43.17541,
+    "arestas": [
+      {
+        "destino": "Hiper Shopping",
+        "distancia": 1359.42,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52351,
+        "lng": -43.17089
+      },
+      {
+        "destino": "Rua 24 de Maio",
+        "distancia": 41.89,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 3,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51457,
+        "lng": -43.17576
+      }
+    ]
+  },
+  "Shopping Pátio Petrópolis": {
+    "lat": -22.51276,
+    "lng": -43.17776,
+    "arestas": [
+      {
+        "destino": "Rua 24 de Maio",
+        "distancia": 306.93,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 3,
+        "hidr": 2,
+        "tipo": "coletora",
+        "lat": -22.51457,
+        "lng": -43.17576
+      },
+      {
+        "destino": "Tribuna",
+        "distancia": 162.79,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "arterial",
+        "lat": -22.51128,
+        "lng": -43.17755
+      }
+    ]
+  },
+  "SMH": {
+    "lat": -22.51976,
+    "lng": -43.19311,
+    "arestas": [
+      {
+        "destino": "Avenida Portugal",
+        "distancia": 335.83,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.51863,
+        "lng": -43.19123
+      },
+      {
+        "destino": "Bairro Valparaíso",
+        "distancia": 263.02,
+        "caminhao": 0,
+        "geol": 6,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.52121,
+        "lng": -43.19616
+      },
+      {
+        "destino": "Instituto Teológico Franciscano",
+        "distancia": 444.81,
+        "caminhao": 0,
+        "geol": 5,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "residencial",
+        "lat": -22.52296,
+        "lng": -43.19407
+      }
+    ]
+  },
+  "Terra Santa": {
+    "lat": -22.51548,
+    "lng": -43.18548,
+    "arestas": [
+      {
+        "destino": "Palácio Itaboraí",
+        "distancia": 208.09,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 1,
+        "tipo": "coletora",
+        "lat": -22.51544,
+        "lng": -43.18741
+      },
+      {
+        "destino": "UPA",
+        "distancia": 280.77,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 2,
+        "tipo": "arterial",
+        "lat": -22.51671,
+        "lng": -43.18375
+      }
+    ]
+  },
+  "Tribuna": {
+    "lat": -22.51128,
+    "lng": -43.17755,
+    "arestas": [
+      {
+        "destino": "Centro",
+        "distancia": 252.33,
+        "caminhao": 1,
+        "geol": 3,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial forte",
+        "lat": -22.51013,
+        "lng": -43.1754
+      },
+      {
+        "destino": "Fórum Antigo",
+        "distancia": 159.27,
+        "caminhao": 1,
+        "geol": 2,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial",
+        "lat": -22.511,
+        "lng": -43.179
+      }
+    ]
+  },
+  "UPA": {
+    "lat": -22.51671,
+    "lng": -43.18375,
+    "arestas": [
+      {
+        "destino": "Duas Pontes",
+        "distancia": 693.54,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "arterial",
+        "lat": -22.52081,
+        "lng": -43.18839
+      },
+      {
+        "destino": "Fórum Antigo",
+        "distancia": 743.69,
+        "caminhao": 1,
+        "geol": 4,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.511,
+        "lng": -43.179
+      }
+    ]
+  },
+  "Vila Militar": {
+    "lat": -22.50955,
+    "lng": -43.19532,
+    "arestas": [
+      {
+        "destino": "Bairro Bingen",
+        "distancia": 2909.89,
+        "caminhao": 1,
+        "geol": 5,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "coletora",
+        "lat": -22.51309,
+        "lng": -43.22038
+      },
+      {
+        "destino": "Batalhão",
+        "distancia": 1647.25,
+        "caminhao": 0,
+        "geol": 8,
+        "social": 0,
+        "hidr": 3,
+        "tipo": "residencial",
+        "lat": -22.51625,
+        "lng": -43.20052
+      },
+      {
+        "destino": "Hospital Santa Teresa",
+        "distancia": 330.81,
+        "caminhao": 1,
+        "geol": 6,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "coletora",
+        "lat": -22.50603,
+        "lng": -43.19345
+      }
+    ]
+  },
+  "Vila São José": {
+    "lat": -22.50754,
+    "lng": -43.19153,
+    "arestas": [
+      {
+        "destino": "Igreja do Sagrado",
+        "distancia": 373.38,
+        "caminhao": 1,
+        "geol": 0,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial",
+        "lat": -22.50755,
+        "lng": -43.18823
+      },
+      {
+        "destino": "Gehren",
+        "distancia": 627.09,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 5,
+        "tipo": "arterial",
+        "lat": -22.50399,
+        "lng": -43.189
+      }
+    ]
+  },
+  "Volkswagen": {
+    "lat": -22.52962,
+    "lng": -43.19616,
+    "arestas": [
+      {
+        "destino": "Duas Pontes",
+        "distancia": 1212.35,
+        "caminhao": 1,
+        "geol": 1,
+        "social": 0,
+        "hidr": 6,
+        "tipo": "arterial",
+        "lat": -22.52081,
+        "lng": -43.18839
+      },
+      {
+        "destino": "Instituto Teológico Franciscano",
+        "distancia": 888.75,
+        "caminhao": 0,
+        "geol": 3,
+        "social": 0,
+        "hidr": 4,
+        "tipo": "coletora",
+        "lat": -22.52296,
+        "lng": -43.19407
+      },
+      {
+        "destino": "Patrone",
+        "distancia": 84.2,
+        "caminhao": 1,
+        "geol": 0,
+        "social": 0,
+        "hidr": 8,
+        "tipo": "arterial",
+        "lat": -22.52944,
+        "lng": -43.19659
+      }
+    ]
+  }
+}

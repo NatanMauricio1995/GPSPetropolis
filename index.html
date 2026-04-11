@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GPS Petrópolis</title>
+<link rel="stylesheet" href="./leaflet.css"/>
+<script src="./leaflet.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f0ede8; --bg2: #e6e2db; --surface: #ffffff;
+  --border: rgba(0,0,0,0.10); --border2: rgba(0,0,0,0.06);
+  --text: #1a1814; --text2: #5a5650; --text3: #8a8680;
+  --accent: #1a5cff; --green: #0d7a3e; --red: #c0392b;
+  --sidebar-w: 300px; --header-h: 52px;
+  --radius: 8px; --radius-lg: 12px;
+  --mono: 'DM Mono', monospace; --sans: 'Syne', sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #0e0e10; --bg2: #18181c; --surface: #1c1c22;
+  --border: rgba(255,255,255,0.09); --border2: rgba(255,255,255,0.05);
+  --text: #f0eee8; --text2: #9e9a94; --text3: #6a6660;
+  --accent: #4d8aff; --green: #22c55e; --red: #f87171;
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text);
+  font-family: var(--sans); transition: background .3s, color .3s; }
+
+.app { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+/* Header */
+.header {
+  height: var(--header-h); flex-shrink: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--border);
+}
+.header-title { font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.header-title span {
+  font-size: 11px; font-weight: 400; font-family: var(--mono); color: var(--text3);
+  padding: 2px 7px; border: 1px solid var(--border); border-radius: 4px;
+}
+.theme-btn {
+  width: 68px; height: 30px; border-radius: 15px; border: 1px solid var(--border);
+  background: var(--bg2); cursor: pointer; position: relative;
+  display: flex; align-items: center; padding: 0 4px; transition: background .3s;
+}
+.theme-btn::after {
+  content:''; width:22px; height:22px; border-radius:50%; background:var(--surface);
+  box-shadow:0 1px 4px rgba(0,0,0,.2); transition:transform .3s; display:block;
+}
+[data-theme="dark"] .theme-btn::after { transform: translateX(38px); }
+.theme-icon { position:absolute; font-size:12px; top:50%; transform:translateY(-50%); }
+.theme-icon.sun { left:7px; } .theme-icon.moon { right:6px; }
+
+/* Body */
+.body { display: flex; flex: 1; overflow: hidden; min-height: 0; }
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-w); min-width: var(--sidebar-w);
+  background: var(--surface); border-right: 1px solid var(--border);
+  overflow-y: auto; transition: background .3s;
+}
+.sidebar-inner { padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+.section-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .10em; text-transform: uppercase;
+  color: var(--text3); margin-bottom: 6px; font-family: var(--mono);
+}
+.divider { height: 1px; background: var(--border2); }
+
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 11px; color: var(--text2); font-family: var(--mono); }
+.field select, .field input[type="time"] {
+  font-family: var(--mono); font-size: 13px; padding: 8px 10px;
+  border-radius: var(--radius); border: 1px solid var(--border);
+  background: var(--bg2); color: var(--text); width: 100%;
+  outline: none; cursor: pointer; transition: border-color .15s, background .3s;
+}
+.field select:focus, .field input:focus { border-color: var(--accent); }
+
+.vehicle-row { display: flex; gap: 8px; }
+.vehicle-card {
+  flex: 1; padding: 10px 8px; border: 1px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; text-align: center; background: var(--bg2);
+  transition: all .15s; user-select: none;
+}
+.vehicle-card.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.vehicle-icon { font-size: 22px; margin-bottom: 3px; }
+.vehicle-label { font-size: 10px; font-family: var(--mono); color: var(--text2); }
+
+.weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.weather-btn {
+  padding: 8px 6px; border: 1px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; font-size: 11px; font-family: var(--mono); text-align: center;
+  background: var(--bg2); color: var(--text2); line-height: 1.4;
+  transition: all .15s; user-select: none;
+}
+.weather-btn.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); }
+.w-icon { font-size: 16px; display: block; margin-bottom: 2px; }
+.weather-btn:last-child { grid-column: 1 / -1; }
+
+.btn-primary {
+  width: 100%; padding: 11px; background: var(--green); color: #fff;
+  border: none; border-radius: var(--radius); font-family: var(--sans);
+  font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: filter .15s, transform .1s;
+}
+.btn-primary:hover { filter: brightness(1.1); }
+.btn-primary:active { transform: scale(.98); }
+
+.btn-viz {
+  width: 100%; padding: 10px; background: transparent; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;
+  transition: all .15s;
+}
+.btn-viz:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.btn-viz:disabled { opacity: .4; cursor: not-allowed; }
+
+.speed-row { display: flex; align-items: center; gap: 8px; font-size: 11px; font-family: var(--mono); color: var(--text2); }
+.speed-row input { flex: 1; accent-color: var(--accent); }
+
+.step-badge {
+  display: none; font-family: var(--mono); font-size: 10px; padding: 3px 8px;
+  border-radius: 4px; text-align: center;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.step-badge.visible { display: block; }
+
+.info-panel {
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 12px; background: var(--bg2); font-size: 12px; line-height: 1.7; display: none;
+}
+.info-panel.visible { display: block; }
+.info-row { display: flex; justify-content: space-between; align-items: center; }
+.info-row + .info-row { margin-top: 3px; }
+.info-label { color: var(--text3); font-family: var(--mono); font-size: 10px; }
+.info-val   { font-family: var(--mono); font-size: 12px; font-weight: 500; }
+.info-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--border2); }
+.info-alert {
+  margin-top: 8px; padding: 6px 8px; border-radius: 6px; font-size: 11px; font-family: var(--mono);
+  background: color-mix(in srgb, var(--red) 12%, transparent); color: var(--red);
+  border: 1px solid color-mix(in srgb, var(--red) 25%, transparent);
+}
+.info-ok {
+  margin-top: 8px; padding: 6px 8px; border-radius: 6px; font-size: 11px; font-family: var(--mono);
+  background: color-mix(in srgb, var(--green) 10%, transparent); color: var(--green);
+  border: 1px solid color-mix(in srgb, var(--green) 25%, transparent);
+}
+
+/* Mapa */
+.map-wrap { flex: 1; position: relative; min-width: 0; min-height: 0; }
+#map { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+#rain-canvas {
+  position: absolute; inset: 0; pointer-events: none; z-index: 500;
+  opacity: 0; transition: opacity .5s;
+}
+#rain-canvas.active { opacity: 1; }
+
+.map-alert {
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  z-index: 700; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 10px 18px; font-size: 12px;
+  font-family: var(--mono); color: var(--red); display: none; white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+.map-alert.visible { display: block; }
+
+.loader {
+  position: absolute; inset: 0; z-index: 800; display: none;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,.25); backdrop-filter: blur(2px);
+}
+.loader.visible { display: flex; }
+.loader-box {
+  background: var(--surface); border-radius: var(--radius-lg); padding: 24px 32px;
+  font-family: var(--mono); font-size: 13px; color: var(--text2);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+.loader-spinner {
+  width: 28px; height: 28px; border: 3px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.legend {
+  position: absolute; top: 12px; right: 12px; z-index: 600;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 10px 13px; font-family: var(--mono);
+  font-size: 10px; display: none; flex-direction: column; gap: 5px;
+}
+.legend.visible { display: flex; }
+.legend-item { display: flex; align-items: center; gap: 7px; color: var(--text2); }
+.legend-line { width: 22px; height: 3px; border-radius: 2px; }
+
+[data-theme="dark"] .leaflet-tile {
+  filter: brightness(.55) saturate(.8) hue-rotate(180deg) invert(1);
+}
+[data-theme="dark"] .leaflet-container { background: #0e0e10; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="header">
+    <div class="header-title">
+      GPS Petrópolis <span>Dijkstra Educativo</span>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()" title="Alternar tema">
+      <span class="theme-icon sun">☀️</span>
+      <span class="theme-icon moon">🌙</span>
+    </button>
+  </header>
+
+  <div class="body">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+
+        <div>
+          <div class="section-label">Rota</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div class="field">
+              <label>Origem</label>
+              <select id="sel-origem"><option value="">Carregando pontos...</option></select>
+            </div>
+            <div class="field">
+              <label>Destino</label>
+              <select id="sel-destino"><option value="">Carregando pontos...</option></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+          <div class="section-label">Veículo</div>
+          <div class="vehicle-row">
+            <div class="vehicle-card selected" id="v-car" onclick="selectVehicle('car')">
+              <div class="vehicle-icon">🚗</div><div class="vehicle-label">Carro</div>
+            </div>
+            <div class="vehicle-card" id="v-truck" onclick="selectVehicle('truck')">
+              <div class="vehicle-icon">🚚</div><div class="vehicle-label">Caminhão</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+          <div class="section-label">Horário de Saída</div>
+          <div class="field">
+            <label>Hora prevista</label>
+            <input type="time" id="hora" value="08:00"/>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+          <div class="section-label">Condição Climática</div>
+          <div class="weather-grid">
+            <div class="weather-btn selected" id="w-0" onclick="selectWeather(0)"><span class="w-icon">☀️</span>Sem chuva</div>
+            <div class="weather-btn" id="w-1" onclick="selectWeather(1)"><span class="w-icon">🌦</span>Chuva leve</div>
+            <div class="weather-btn" id="w-2" onclick="selectWeather(2)"><span class="w-icon">🌧</span>Chuva moderada</div>
+            <div class="weather-btn" id="w-3" onclick="selectWeather(3)"><span class="w-icon">⛈</span>Chuva forte</div>
+            <div class="weather-btn" id="w-4" onclick="selectWeather(4)"><span class="w-icon">🌪</span>Tempestade</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button class="btn-primary" onclick="calcRota()">▶ Calcular Rota</button>
+          <button class="btn-viz" id="btn-viz" onclick="toggleVisualizacao()" disabled>
+            ◈ Modo Visualização
+          </button>
+          <div class="speed-row" id="speed-row" style="display:none">
+            <span>🐢</span>
+            <input type="range" id="speed-slider" min="50" max="1000" value="350" step="50"/>
+            <span>⚡</span>
+          </div>
+          <div class="step-badge" id="step-badge"></div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="info-panel" id="info-panel"></div>
+
+      </div>
+    </aside>
+
+    <div class="map-wrap">
+      <div id="map"></div>
+      <canvas id="rain-canvas"></canvas>
+      <div class="map-alert" id="map-alert"></div>
+      <div class="loader" id="loader">
+        <div class="loader-box">
+          <div class="loader-spinner"></div>
+          <span id="loader-msg">Calculando...</span>
+        </div>
+      </div>
+      <div class="legend" id="legend">
+        <div style="font-size:9px;letter-spacing:.06em;color:var(--text3);margin-bottom:3px">LEGENDA</div>
+        <div class="legend-item"><div class="legend-line" style="background:#f59e0b"></div>Explorado</div>
+        <div class="legend-item"><div class="legend-line" style="background:#ef4444;opacity:.6"></div>Bloqueado</div>
+        <div class="legend-item"><div class="legend-line" style="background:#3b82f6;height:5px"></div>Rota final</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// ESTADO
+// ═══════════════════════════════════════════════════════════
+const API = 'http://localhost:5000/api';
+
+let grafo = {}, selectedVehicle = 'car', selectedWeather = 0;
+let mapa, layerGrafo, layerRota, layerAnimacao, layerAnimNos;
+let ultimoResultado = null, animTimer = null, animRunning = false;
+let rainCanvas, rainCtx, rainAnim;
+
+const weatherCfg = [
+  { drops:0,   intensity:.00, alert:'' },
+  { drops:60,  intensity:.04, alert:'' },
+  { drops:130, intensity:.10, alert:'⚠ Atenção: pista molhada' },
+  { drops:220, intensity:.18, alert:'⛔ Chuva forte — reduza a velocidade' },
+  { drops:360, intensity:.30, alert:'🚨 Tempestade — evite viajar se possível' },
+];
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  // Mapa
+  mapa = L.map('map', { center: [-22.515, -43.185], zoom: 14 });
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '© OpenStreetMap'
+  }).addTo(mapa);
+  layerGrafo    = L.layerGroup().addTo(mapa);
+  layerAnimacao = L.layerGroup().addTo(mapa);
+  layerAnimNos  = L.layerGroup().addTo(mapa);
+  layerRota     = L.layerGroup().addTo(mapa);
+  setTimeout(() => mapa.invalidateSize(), 200);
+
+  // Chuva
+  rainCanvas = document.getElementById('rain-canvas');
+  rainCtx    = rainCanvas.getContext('2d');
+  const resizeRain = () => {
+    const w = document.querySelector('.map-wrap');
+    rainCanvas.width = w.offsetWidth; rainCanvas.height = w.offsetHeight;
+  };
+  resizeRain();
+  window.addEventListener('resize', resizeRain);
+
+  // Dados do servidor (com retry automático)
+  carregarDados(1);
+});
+
+// ═══════════════════════════════════════════════════════════
+// CARREGAR DADOS
+// ═══════════════════════════════════════════════════════════
+async function carregarDados(tentativa) {
+  try {
+    showLoader(`Conectando ao servidor... (${tentativa}/5)`);
+    const [rP, rG] = await Promise.all([
+      fetch(`${API}/pontos`),
+      fetch(`${API}/grafo`),
+    ]);
+    if (!rP.ok || !rG.ok) throw new Error('Resposta inválida do servidor');
+    const pontos = await rP.json();
+    grafo = await rG.json();
+    hideLoader();
+
+    // Popular selects
+    ['sel-origem', 'sel-destino'].forEach((id, i) => {
+      const sel = document.getElementById(id);
+      sel.innerHTML = `<option value="">${i === 0 ? 'Selecione a origem...' : 'Selecione o destino...'}</option>`;
+      pontos.forEach(p => sel.add(new Option(p, p)));
+    });
+
+    desenharGrafoBase();
+    hideAlert();
+    console.log(`[OK] ${pontos.length} pontos, ${Object.keys(grafo).length} nós`);
+  } catch(e) {
+    hideLoader();
+    if (tentativa < 5) {
+      showAlert(`⏳ Aguardando servidor... (${tentativa}/5)`);
+      setTimeout(() => carregarDados(tentativa + 1), 2000);
+    } else {
+      showAlert('❌ Servidor não encontrado. Execute rodar.bat primeiro.');
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// GRAFO BASE — pins vermelhos + arestas
+// ═══════════════════════════════════════════════════════════
+function desenharGrafoBase() {
+  layerGrafo.clearLayers();
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const corAresta = dark ? 'rgba(150,150,180,.25)' : 'rgba(80,80,110,.18)';
+
+  for (const [nome, d] of Object.entries(grafo)) {
+    // Pin vermelho pequeno em cada nó
+    L.circleMarker([d.lat, d.lng], {
+      radius: 5, color: '#c0392b', fillColor: '#e74c3c',
+      fillOpacity: .9, weight: 1.5, opacity: 1,
+    }).bindTooltip(nome, { direction: 'top', offset: [0, -4] })
+      .addTo(layerGrafo);
+
+    // Arestas do grafo
+    for (const a of d.arestas) {
+      L.polyline([[d.lat, d.lng], [a.lat, a.lng]], {
+        color: corAresta, weight: 1.5, opacity: 1,
+      }).addTo(layerGrafo);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// UI CONTROLS
+// ═══════════════════════════════════════════════════════════
+function toggleTheme() {
+  const r = document.documentElement;
+  r.setAttribute('data-theme', r.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  if (Object.keys(grafo).length) desenharGrafoBase();
+}
+
+function selectVehicle(v) {
+  selectedVehicle = v;
+  document.getElementById('v-car').classList.toggle('selected', v === 'car');
+  document.getElementById('v-truck').classList.toggle('selected', v === 'truck');
+}
+
+function selectWeather(i) {
+  selectedWeather = i;
+  for (let j = 0; j < 5; j++)
+    document.getElementById('w-'+j).classList.toggle('selected', j === i);
+  updateRain(weatherCfg[i]);
+}
+
+// ═══════════════════════════════════════════════════════════
+// CALCULAR ROTA
+// ═══════════════════════════════════════════════════════════
+async function calcRota() {
+  const orig = document.getElementById('sel-origem').value;
+  const dest = document.getElementById('sel-destino').value;
+  const hora = document.getElementById('hora').value;
+
+  if (!orig || !dest) { showAlert('Selecione origem e destino.'); return; }
+  if (orig === dest)   { showAlert('Origem e destino devem ser diferentes.'); return; }
+
+  pararAnimacao();
+  layerRota.clearLayers();
+  layerAnimacao.clearLayers();
+  layerAnimNos.clearLayers();
+  hideAlert();
+  document.getElementById('info-panel').classList.remove('visible');
+  document.getElementById('btn-viz').disabled = true;
+  document.getElementById('speed-row').style.display = 'none';
+  document.getElementById('step-badge').classList.remove('visible');
+  document.getElementById('legend').classList.remove('visible');
+  ultimoResultado = null;
+  showLoader('Calculando rota...');
+
+  try {
+    const r = await fetch(`${API}/calcular`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ origem: orig, destino: dest, hora, chuva: selectedWeather, veiculo: selectedVehicle }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const res = await r.json();
+    hideLoader();
+
+    if (res.status === 'sem_rota') {
+      showAlert('⛔ Nenhuma rota disponível com as condições atuais.');
+      ultimoResultado = res;
+      if (res.historico?.length) {
+        document.getElementById('btn-viz').disabled = false;
+        document.getElementById('speed-row').style.display = 'flex';
+      }
+      return;
+    }
+    if (res.status === 'erro') {
+      showAlert('Erro: ' + (res.mensagem || '?'));
+      return;
+    }
+
+    ultimoResultado = res;
+    desenharRota(res, orig, dest);
+    renderInfo(res, orig, dest, hora);
+    document.getElementById('btn-viz').disabled = false;
+    document.getElementById('speed-row').style.display = 'flex';
+    setTimeout(() => mapa.invalidateSize(), 50);
+
+  } catch(e) {
+    hideLoader();
+    showAlert('❌ Erro de rede. O servidor ainda está rodando?');
+    console.error(e);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// DESENHAR ROTA + PINS
+// ═══════════════════════════════════════════════════════════
+function makePinIcon(cor, letra) {
+  return L.divIcon({
+    className: '',
+    html: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="40" viewBox="0 0 28 40">
+      <path d="M14 0C6.3 0 0 6.3 0 14c0 9.3 14 26 14 26S28 23.3 28 14C28 6.3 21.7 0 14 0z"
+        fill="${cor}" stroke="white" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="5.5" fill="white" opacity="0.92"/>
+      <text x="14" y="18" text-anchor="middle" font-size="8" font-weight="bold"
+        font-family="sans-serif" fill="${cor}">${letra}</text>
+    </svg>`,
+    iconSize: [28, 40],
+    iconAnchor: [14, 40],
+    popupAnchor: [0, -42],
+  });
+}
+
+function desenharRota(res, orig, dest) {
+  layerRota.clearLayers();
+
+  L.polyline(res.polyline, {
+    color: '#2563eb', weight: 5, opacity: .92, lineJoin: 'round', lineCap: 'round',
+  }).addTo(layerRota);
+
+  // Coordenadas do início e fim da polyline (sempre disponíveis)
+  const ptA = res.polyline[0];
+  const ptB = res.polyline[res.polyline.length - 1];
+
+  // Preferir coordenadas do grafo (mais precisas), fallback para polyline
+  const coordA = grafo[orig] ? [grafo[orig].lat, grafo[orig].lng] : ptA;
+  const coordB = grafo[dest] ? [grafo[dest].lat, grafo[dest].lng] : ptB;
+
+  L.marker(coordA, { icon: makePinIcon('#e74c3c', 'A'), zIndexOffset: 1000 })
+    .bindPopup(`<b>Origem</b><br>${orig}`)
+    .addTo(layerRota);
+
+  L.marker(coordB, { icon: makePinIcon('#16a34a', 'B'), zIndexOffset: 1000 })
+    .bindPopup(`<b>Destino</b><br>${dest}`)
+    .addTo(layerRota);
+
+  const bounds = L.latLngBounds(res.polyline);
+  mapa.fitBounds(bounds, { padding: [50, 50] });
+}
+
+// ═══════════════════════════════════════════════════════════
+// PAINEL INFO
+// ═══════════════════════════════════════════════════════════
+function renderInfo(res, orig, dest, hora) {
+  const km = (res.distancia_total / 1000).toFixed(1);
+  const w  = weatherCfg[selectedWeather];
+  document.getElementById('info-panel').innerHTML = `
+    <div class="info-title">${orig} → ${dest}</div>
+    <div class="info-row"><span class="info-label">Saída</span><span class="info-val">${hora}</span></div>
+    <div class="info-row"><span class="info-label">Veículo</span><span class="info-val">${selectedVehicle==='car'?'🚗 Carro':'🚚 Caminhão'}</span></div>
+    <div class="info-row"><span class="info-label">Distância</span><span class="info-val">${km} km</span></div>
+    <div class="info-row"><span class="info-label">Nós na rota</span><span class="info-val">${res.caminho_nos?.length||0}</span></div>
+    <div class="info-row"><span class="info-label">Arestas exploradas</span><span class="info-val">${res.historico?.length||0}</span></div>
+    ${res.via_ors ? '<div class="info-ok">✓ Rota via OpenRouteService</div>'
+                  : '<div class="info-alert">⚠ ORS indisponível — rota aproximada</div>'}
+    ${w.alert ? `<div class="info-alert">${w.alert}</div>` : ''}
+  `;
+  document.getElementById('info-panel').classList.add('visible');
+}
+
+// ═══════════════════════════════════════════════════════════
+// MODO VISUALIZAÇÃO
+// ═══════════════════════════════════════════════════════════
+function toggleVisualizacao() {
+  if (animRunning) { pararAnimacao(); return; }
+  iniciarVisualizacao();
+}
+
+function iniciarVisualizacao() {
+  const hist = ultimoResultado?.historico;
+  if (!hist?.length) { showAlert('Sem dados de animação.'); return; }
+
+  layerAnimacao.clearLayers();
+  layerAnimNos.clearLayers();
+  layerRota.clearLayers();
+  document.getElementById('legend').classList.add('visible');
+  document.getElementById('btn-viz').textContent = '◈ Parar Visualização';
+  document.getElementById('step-badge').classList.add('visible');
+  animRunning = true;
+
+  let idx = 0;
+  const nosVistos = new Set();
+  const slider = document.getElementById('speed-slider');
+
+  function passo() {
+    if (idx >= hist.length) { finalizarAnimacao(); return; }
+    const h = hist[idx++];
+
+    let cor = '#f59e0b', w = 2, op = .75, dash = null;
+    if (h.tipo === 'bloqueado')  { cor = '#ef4444'; w = 1.5; op = .45; dash = '5,5'; }
+    if (h.tipo === 'finalizado') { cor = '#3b82f6'; w = 4.5; op = 1; }
+
+    L.polyline([[h.lat_u, h.lng_u], [h.lat_v, h.lng_v]], {
+      color: cor, weight: w, opacity: op, dashArray: dash,
+    }).addTo(layerAnimacao);
+
+    if (!nosVistos.has(h.u)) {
+      nosVistos.add(h.u);
+      L.circleMarker([h.lat_u, h.lng_u], {
+        radius: 5, color: '#7c3aed', fillColor: '#8b5cf6', fillOpacity: .85, weight: 1.5,
+      }).addTo(layerAnimNos);
+    }
+
+    document.getElementById('step-badge').textContent = `Passo ${idx} / ${hist.length}`;
+    animTimer = setTimeout(passo, 1050 - parseInt(slider.value));
+  }
+  passo();
+}
+
+function finalizarAnimacao() {
+  animRunning = false;
+  document.getElementById('btn-viz').textContent = '◈ Modo Visualização';
+  if (ultimoResultado?.status === 'ok') {
+    desenharRota(ultimoResultado,
+      document.getElementById('sel-origem').value,
+      document.getElementById('sel-destino').value);
+  }
+  setTimeout(() => document.getElementById('legend').classList.remove('visible'), 4000);
+  document.getElementById('step-badge').textContent = '✓ Concluído';
+  setTimeout(() => document.getElementById('step-badge').classList.remove('visible'), 3000);
+}
+
+function pararAnimacao() {
+  if (animTimer) clearTimeout(animTimer);
+  animRunning = false;
+  layerAnimacao.clearLayers();
+  layerAnimNos.clearLayers();
+  document.getElementById('btn-viz').textContent = '◈ Modo Visualização';
+  document.getElementById('legend').classList.remove('visible');
+  document.getElementById('step-badge').classList.remove('visible');
+  if (ultimoResultado?.status === 'ok') {
+    desenharRota(ultimoResultado,
+      document.getElementById('sel-origem').value,
+      document.getElementById('sel-destino').value);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// CHUVA ANIMADA
+// ═══════════════════════════════════════════════════════════
+let rainDrops = [];
+function updateRain(cfg) {
+  cancelAnimationFrame(rainAnim);
+  rainCtx.clearRect(0, 0, rainCanvas.width, rainCanvas.height);
+  rainDrops = [];
+  if (!cfg.drops) { rainCanvas.classList.remove('active'); return; }
+  rainCanvas.classList.add('active');
+  for (let i = 0; i < cfg.drops; i++)
+    rainDrops.push({
+      x: Math.random() * rainCanvas.width,
+      y: Math.random() * rainCanvas.height,
+      len: 8 + Math.random() * 14,
+      speed: 4 + Math.random() * 6,
+    });
+  function tick() {
+    rainCtx.clearRect(0, 0, rainCanvas.width, rainCanvas.height);
+    rainCtx.fillStyle = `rgba(80,120,200,${cfg.intensity})`;
+    rainCtx.fillRect(0, 0, rainCanvas.width, rainCanvas.height);
+    rainCtx.strokeStyle = 'rgba(170,210,255,.55)';
+    rainCtx.lineWidth = 1;
+    for (const d of rainDrops) {
+      rainCtx.beginPath();
+      rainCtx.moveTo(d.x, d.y);
+      rainCtx.lineTo(d.x + 2, d.y + d.len);
+      rainCtx.stroke();
+      d.y += d.speed;
+      if (d.y > rainCanvas.height) { d.y = -d.len; d.x = Math.random() * rainCanvas.width; }
+    }
+    rainAnim = requestAnimationFrame(tick);
+  }
+  tick();
+}
+
+// ═══════════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════════
+function showAlert(m) {
+  const el = document.getElementById('map-alert');
+  el.textContent = m; el.classList.add('visible');
+}
+function hideAlert() {
+  document.getElementById('map-alert').classList.remove('visible');
+}
+function showLoader(m) {
+  document.getElementById('loader-msg').textContent = m;
+  document.getElementById('loader').classList.add('visible');
+}
+function hideLoader() {
+  document.getElementById('loader').classList.remove('visible');
+}
+</script>
+</body>
+</html>
