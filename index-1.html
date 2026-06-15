@@ -648,8 +648,6 @@ async function carregarDados(tentativa) {
     const nosJson = await rN.json();
 
     grafo = {};
-    const geometriaMap = nosJson.geometria || {};
-
     for (const [id, dados] of Object.entries(nosJson.nos)) {
       grafo[parseInt(id)] = { nome: dados.nome, lat: dados.lat, lng: dados.lon, arestas: [] };
     }
@@ -657,16 +655,10 @@ async function carregarDados(tentativa) {
       const no   = grafo[a.origem];
       const dest = grafo[a.destino];
       if (no && dest) {
-        const chaveGeo = `${a.origem}-${a.destino}`;
-        const geoPoints = geometriaMap[chaveGeo] || [];
-        const geometria = geoPoints.length > 0
-          ? [[no.lat, no.lng], ...geoPoints.map(p => [p.lat, p.lon]), [dest.lat, dest.lng ?? dest.lon]]
-          : [];
         no.arestas.push({
           destId: a.destino, lat: dest.lat, lng: dest.lon ?? dest.lng,
           rio: a.rio, chuva: a.chuva, largura: a.largura,
           fluxo: a.fluxo, tipo: a.tipo, comunidade: a.comunidade, veiculo: a.veiculo,
-          geometria,
         });
       }
     }
@@ -711,7 +703,19 @@ function desenharGrafoBase() {
       direction: 'top', offset: [0,-4],
     }).addTo(layerGrafo);
     
-
+    // ── DESENHAR SUBNÓS ─────────────────────────
+	if (a.geometria) {
+	  a.geometria.forEach(([lat, lon]) => {
+	    L.circleMarker([lat, lon], {
+	      radius: 2,
+	      color: "#888",
+	      fillColor: "#aaa",
+	      fillOpacity: 0.5,
+	      weight: 1
+	    }).addTo(layerGrafo);
+	  });
+	}
+	
     // ── Arestas ────────────────────────────────────
     for (const a of d.arestas) {
       const res      = calcPeso(a, nid, ctx);
@@ -754,32 +758,23 @@ function desenharGrafoBase() {
           </div>`;
       }
 
-	// ── GEOMETRIA — usa pontos intermediários ─────
-	let coords;
+	// ── GEOMETRIA (SUBNÓS) ─────────────────────────
+	let coords = [[d.lat, d.lng], [a.lat, a.lng]];
+	
+	// se tiver geometria, usa ela
 	if (a.geometria && a.geometria.length > 0) {
-	  coords = a.geometria;
-	  for (let i = 1; i < a.geometria.length - 1; i++) {
-	    const [lat, lon] = a.geometria[i];
-	    L.circleMarker([lat, lon], {
-	      radius: 2,
-	      color: dark ? '#666' : '#999',
-	      fillColor: dark ? '#555' : '#bbb',
-	      fillOpacity: 0.7,
-	      weight: 1,
-	      interactive: false,
-	    }).addTo(layerGrafo);
-	  }
-	} else {
-	  coords = [[d.lat, d.lng], [a.lat, a.lng]];
+	  coords = a.geometria.map(([lat, lon]) => [lat, lon]);
 	}
+	
+	// desenha linha com geometria
 	const poly = L.polyline(coords, {
 	  color: cor,
 	  weight: peso,
 	  opacity: opac,
 	  dashArray: dash,
 	  interactive: true,
-	}).bindTooltip(ttHtml, { sticky: true, className: 'tt-wrap' })
-	  .addTo(layerGrafo);
+	})        .bindTooltip(ttHtml, { sticky: true, className: 'tt-wrap' })
+	        .addTo(layerGrafo);
 
       if (!res.bloqueado) {
         const corHover = dark ? '#86efac' : '#15803d';
@@ -964,7 +959,7 @@ function renderInfo(res, orig, dest, hora) {
     <div class="info-row"><span class="info-label">Veículo</span><span class="info-val">${selectedVehicle==='car'?'Carro':'Caminhão'}</span></div>
     <div class="info-row"><span class="info-label">Distância</span><span class="info-val">${distKm} km</span></div>
     <div class="info-row"><span class="info-label">Nós</span><span class="info-val">${res.caminho?.length || 0}</span></div>
-    <div class="info-tag ${viaOrs?'ok':'warn'}">✓ Rota com geometria real das vias</div>
+    <div class="info-tag ${viaOrs?'ok':'warn'}">${viaOrs?'✓ Rota via OpenRouteService':'⚠ ORS indisponível — rota pelos nós'}</div>
     ${w.alert ? `<div class="info-tag err">${w.alert}</div>` : ''}
   `;
   document.getElementById('info-panel').classList.add('visible');

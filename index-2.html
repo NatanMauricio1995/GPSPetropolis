@@ -368,11 +368,11 @@ html, body { height: 100%; background: var(--bg); color: var(--text); font-famil
           <div class="section-label">Rota</div>
           <div class="field">
             <label>Origem</label>
-            <select id="sel-origem"><option value="">Carregando...</option></select>
+            <select id="sel-origem" onchange="onSelecionarPonto()"><option value="">Carregando...</option></select>
           </div>
           <div class="field">
             <label>Destino</label>
-            <select id="sel-destino"><option value="">Carregando...</option></select>
+            <select id="sel-destino" onchange="onSelecionarPonto()"><option value="">Carregando...</option></select>
           </div>
         </div>
 
@@ -560,8 +560,10 @@ function getContexto() {
  */
 function calcPeso(a, origemId, ctx) {
   // ── Bloqueios ──────────────────────────────────────
-  if (ctx.chuva > a.chuva)
-    return { bloqueado: true, motivo: `Chuva excede limite (nível ${a.chuva})` };
+  // chuva=0 na aresta = via sem rio, sem restrição (nunca alaga)
+  // chuva>0 na aresta = nível máximo suportado; fecha se chuva atual supera esse limite
+  if (a.chuva > 0 && ctx.chuva > a.chuva)
+    return { bloqueado: true, motivo: `Via alaga acima do nível ${a.chuva} de chuva` };
   if (ctx.veiculo === 2 && a.veiculo === 0)
     return { bloqueado: true, motivo: 'Via não permite caminhão' };
   if ([1, 7].includes(ctx.hora) && a.comunidade === 1)
@@ -589,7 +591,7 @@ function calcPeso(a, origemId, ctx) {
 
   // ── Fórmula idêntica ao server.py ─────────────────
   const peso = dist * (1*wL + 2*wH + 3*wT + 4*wF + 5*wC) / 15
-               * (wL / 10) * (wT / 10) * (wF / 10);
+               * (wL / 10) * (wT / 10);
 
   return { bloqueado: false, peso, pesoFmt: peso.toFixed(1) + ' m' };
 }
@@ -648,8 +650,6 @@ async function carregarDados(tentativa) {
     const nosJson = await rN.json();
 
     grafo = {};
-    const geometriaMap = nosJson.geometria || {};
-
     for (const [id, dados] of Object.entries(nosJson.nos)) {
       grafo[parseInt(id)] = { nome: dados.nome, lat: dados.lat, lng: dados.lon, arestas: [] };
     }
@@ -657,16 +657,10 @@ async function carregarDados(tentativa) {
       const no   = grafo[a.origem];
       const dest = grafo[a.destino];
       if (no && dest) {
-        const chaveGeo = `${a.origem}-${a.destino}`;
-        const geoPoints = geometriaMap[chaveGeo] || [];
-        const geometria = geoPoints.length > 0
-          ? [[no.lat, no.lng], ...geoPoints.map(p => [p.lat, p.lon]), [dest.lat, dest.lng ?? dest.lon]]
-          : [];
         no.arestas.push({
           destId: a.destino, lat: dest.lat, lng: dest.lon ?? dest.lng,
           rio: a.rio, chuva: a.chuva, largura: a.largura,
           fluxo: a.fluxo, tipo: a.tipo, comunidade: a.comunidade, veiculo: a.veiculo,
-          geometria,
         });
       }
     }
@@ -710,7 +704,6 @@ function desenharGrafoBase() {
     }).bindTooltip(`<span style="font-family:var(--mono,monospace);font-size:10px"><b>${id}</b> · ${d.nome}</span>`, {
       direction: 'top', offset: [0,-4],
     }).addTo(layerGrafo);
-    
 
     // ── Arestas ────────────────────────────────────
     for (const a of d.arestas) {
@@ -724,15 +717,16 @@ function desenharGrafoBase() {
         peso = 2;
         opac = 0.7;
         dash = '5 4';
+        const limChuva = a.chuva === 0 ? 'Sem restrição' : `Fecha acima do nível ${a.chuva}`;
         ttHtml = `
           <div class="tt-inner">
             <div class="tt-head blocked">Via Bloqueada</div>
             <div class="tt-motive">${res.motivo}</div>
             <div class="tt-row"><span class="tt-k">Destino</span><span class="tt-v">${destNome}</span></div>
-            <div class="tt-row"><span class="tt-k">Limite chuva</span><span class="tt-v">Nível ${a.chuva}</span></div>
+            <div class="tt-row"><span class="tt-k">Resist. chuva</span><span class="tt-v">${limChuva}</span></div>
             <div class="tt-row"><span class="tt-k">Largura</span><span class="tt-v">${LABEL_LARGURA[a.largura]}</span></div>
             <div class="tt-row"><span class="tt-k">Tipo</span><span class="tt-v">${LABEL_TIPO[a.tipo]}</span></div>
-            ${a.rio ? '<div class="tt-tag">⚠ Próxima a rio</div>' : ''}
+            ${a.rio ? `<div class="tt-tag">🌊 Via com rio — fecha no nível ${a.chuva}</div>` : ''}
             ${a.comunidade ? '<div class="tt-tag">⚠ Área de comunidade</div>' : ''}
           </div>`;
       } else {
@@ -741,45 +735,37 @@ function desenharGrafoBase() {
         peso = 1.5;
         opac = 0.55;
         dash = null;
+        const limChuva = a.chuva === 0 ? 'Sem restrição' : `Fecha acima do nível ${a.chuva}`;
+        // Distância desta aresta específica
+        const distAresta = (() => {
+          const o2 = grafo[nid], d2 = grafo[a.destId];
+          if (!o2 || !d2) return '—';
+          const R2=6371008.8, la1=o2.lat*Math.PI/180, lo1=o2.lng*Math.PI/180;
+          const la2=d2.lat*Math.PI/180, lo2=d2.lng*Math.PI/180;
+          const dL=la2-la1, dO=lo2-lo1;
+          const aa=Math.sin(dL/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dO/2)**2;
+          return (2*R2*Math.asin(Math.sqrt(aa))).toFixed(0)+'m';
+        })();
         ttHtml = `
           <div class="tt-inner">
             <div class="tt-head">Via Livre</div>
             <div class="tt-row"><span class="tt-k">Destino</span><span class="tt-v">${destNome}</span></div>
             <div class="tt-row"><span class="tt-k">Peso</span><span class="tt-v accent">${res.pesoFmt}</span></div>
+            <div class="tt-row"><span class="tt-k">Distância</span><span class="tt-v">${distAresta}</span></div>
             <div class="tt-row"><span class="tt-k">Largura</span><span class="tt-v">${LABEL_LARGURA[a.largura]}</span></div>
             <div class="tt-row"><span class="tt-k">Tipo</span><span class="tt-v">${LABEL_TIPO[a.tipo]}</span></div>
             <div class="tt-row"><span class="tt-k">Fluxo</span><span class="tt-v">${LABEL_FLUXO[a.fluxo]}</span></div>
-            ${a.rio ? '<div class="tt-tag">⚠ Próxima a rio</div>' : ''}
+            <div class="tt-row"><span class="tt-k">Resist. chuva</span><span class="tt-v">${limChuva}</span></div>
+            ${a.rio ? `<div class="tt-tag" style="background:var(--yellow-bg);color:var(--yellow);border-color:color-mix(in srgb,var(--yellow) 25%,transparent)">🌊 Via com rio — fecha no nível ${a.chuva}</div>` : ''}
             ${a.comunidade ? '<div class="tt-tag">⚠ Área de comunidade</div>' : ''}
           </div>`;
       }
 
-	// ── GEOMETRIA — usa pontos intermediários ─────
-	let coords;
-	if (a.geometria && a.geometria.length > 0) {
-	  coords = a.geometria;
-	  for (let i = 1; i < a.geometria.length - 1; i++) {
-	    const [lat, lon] = a.geometria[i];
-	    L.circleMarker([lat, lon], {
-	      radius: 2,
-	      color: dark ? '#666' : '#999',
-	      fillColor: dark ? '#555' : '#bbb',
-	      fillOpacity: 0.7,
-	      weight: 1,
-	      interactive: false,
-	    }).addTo(layerGrafo);
-	  }
-	} else {
-	  coords = [[d.lat, d.lng], [a.lat, a.lng]];
-	}
-	const poly = L.polyline(coords, {
-	  color: cor,
-	  weight: peso,
-	  opacity: opac,
-	  dashArray: dash,
-	  interactive: true,
-	}).bindTooltip(ttHtml, { sticky: true, className: 'tt-wrap' })
-	  .addTo(layerGrafo);
+      const poly = L.polyline([[d.lat, d.lng], [a.lat, a.lng]], {
+        color: cor, weight: peso, opacity: opac, dashArray: dash, interactive: true,
+      })
+        .bindTooltip(ttHtml, { sticky: true, className: 'tt-wrap' })
+        .addTo(layerGrafo);
 
       if (!res.bloqueado) {
         const corHover = dark ? '#86efac' : '#15803d';
@@ -845,6 +831,7 @@ async function calcRota() {
   layerRota.clearLayers();
   layerAnimacao.clearLayers();
   layerAnimNos.clearLayers();
+  if (layerPreview) layerPreview.clearLayers();
   hideAlert();
   document.getElementById('info-panel').classList.remove('visible');
   document.getElementById('btn-viz').disabled = true;
@@ -938,22 +925,15 @@ function desenharRota(res, orig, dest) {
 // PAINEL INFO
 // ═══════════════════════════════════════════════════════
 function renderInfo(res, orig, dest, hora) {
-  const w       = weatherCfg[selectedWeather];
-  const viaOrs  = res.polyline && res.polyline.length > 0;
-  const pts     = res.polyline || [];
-  let distKm    = '—';
+  const w      = weatherCfg[selectedWeather];
+  const viaOrs = res.polyline && res.polyline.length > 0;
 
-  if (pts.length >= 2) {
-    let total = 0;
-    const R = 6371008.8;
-    for (let i = 1; i < pts.length; i++) {
-      const [la1,lo1] = pts[i-1], [la2,lo2] = pts[i];
-      const dLat = (la2-la1)*Math.PI/180, dLon = (lo2-lo1)*Math.PI/180;
-      const a = Math.sin(dLat/2)**2 + Math.cos(la1*Math.PI/180)*Math.cos(la2*Math.PI/180)*Math.sin(dLon/2)**2;
-      total += 2*R*Math.asin(Math.sqrt(a));
-    }
-    distKm = (total/1000).toFixed(1);
-  }
+  // Distância: usa o valor calculado pelo server (polyline ORS ou Haversine pelos nós)
+  const distM  = res.distancia_m || 0;
+  const distKm = distM >= 1000 ? (distM / 1000).toFixed(2) + ' km' : distM.toFixed(0) + ' m';
+
+  // Custo Dijkstra (peso total da rota)
+  const custo  = res.custo != null ? res.custo.toFixed(2) : '—';
 
   const nomeOrig = grafo[orig]?.nome || orig;
   const nomeDest = grafo[dest]?.nome || dest;
@@ -962,9 +942,10 @@ function renderInfo(res, orig, dest, hora) {
     <div class="info-title">${nomeOrig} → ${nomeDest}</div>
     <div class="info-row"><span class="info-label">Saída</span><span class="info-val">${hora}</span></div>
     <div class="info-row"><span class="info-label">Veículo</span><span class="info-val">${selectedVehicle==='car'?'Carro':'Caminhão'}</span></div>
-    <div class="info-row"><span class="info-label">Distância</span><span class="info-val">${distKm} km</span></div>
-    <div class="info-row"><span class="info-label">Nós</span><span class="info-val">${res.caminho?.length || 0}</span></div>
-    <div class="info-tag ${viaOrs?'ok':'warn'}">✓ Rota com geometria real das vias</div>
+    <div class="info-row"><span class="info-label">Distância</span><span class="info-val">${distKm}</span></div>
+    <div class="info-row"><span class="info-label">Custo Dijkstra</span><span class="info-val">${custo}</span></div>
+    <div class="info-row"><span class="info-label">Nós no caminho</span><span class="info-val">${res.caminho?.length || 0}</span></div>
+    <div class="info-tag ${viaOrs?'ok':'warn'}">${viaOrs?'✓ Rota via OpenRouteService':'⚠ ORS indisponível — rota pelos nós'}</div>
     ${w.alert ? `<div class="info-tag err">${w.alert}</div>` : ''}
   `;
   document.getElementById('info-panel').classList.add('visible');
@@ -1063,6 +1044,40 @@ function updateRain(cfg) {
     rainAnim = requestAnimationFrame(tick);
   }
   tick();
+}
+
+// ═══════════════════════════════════════════════════════
+// PREVIEW DE ORIGEM / DESTINO AO SELECIONAR NOS DROPDOWNS
+// ═══════════════════════════════════════════════════════
+let layerPreview = null;
+
+function onSelecionarPonto() {
+  if (!mapa) return;
+  if (!layerPreview) { layerPreview = L.layerGroup().addTo(mapa); }
+  layerPreview.clearLayers();
+
+  const origId = parseInt(document.getElementById('sel-origem').value);
+  const destId = parseInt(document.getElementById('sel-destino').value);
+
+  if (origId && grafo[origId]) {
+    const o = grafo[origId];
+    L.marker([o.lat, o.lng], { icon: makePinIcon('#dc2626', 'A'), zIndexOffset: 900 })
+      .bindTooltip(`<b>Origem:</b> ${o.nome || origId}`, { direction: 'top', offset: [0,-38] })
+      .addTo(layerPreview);
+  }
+  if (destId && grafo[destId]) {
+    const d = grafo[destId];
+    L.marker([d.lat, d.lng], { icon: makePinIcon('#15803d', 'B'), zIndexOffset: 900 })
+      .bindTooltip(`<b>Destino:</b> ${d.nome || destId}`, { direction: 'top', offset: [0,-38] })
+      .addTo(layerPreview);
+  }
+
+  // Centralizar o mapa nos pontos selecionados
+  const pts = [];
+  if (origId && grafo[origId]) pts.push([grafo[origId].lat, grafo[origId].lng]);
+  if (destId && grafo[destId]) pts.push([grafo[destId].lat, grafo[destId].lng]);
+  if (pts.length === 2) mapa.fitBounds(L.latLngBounds(pts), { padding: [80, 80], maxZoom: 15 });
+  else if (pts.length === 1) mapa.setView(pts[0], 15);
 }
 
 // ═══════════════════════════════════════════════════════

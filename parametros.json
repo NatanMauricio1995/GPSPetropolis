@@ -1,0 +1,86 @@
+{
+	"constantes": 
+	{
+		"raio_terra_m": 6371008.80
+	},
+
+	"formulas": 
+	{
+		"haversine": 
+		{
+			"descricao": "Calcula a distância entre dois pontos na superfície da Terra",
+			"formula": "d = 2r * arcsin( √[ sin²(Δφ/2) + cos(φ1) * cos(φ2) * sin²(Δλ/2)])"
+		},
+		
+		"peso": 
+		{
+			"descricao": "Cálculo do peso da aresta",
+			"formula": "peso = distancia * (1 * largura + 2 * hora + 3 * tipo + 4 * fluxo + 5 * chuva) / 10 * (largura / 10) * (tipo / 10) * (fluxo / 10)"
+		}
+	},
+
+	"chuva": 
+	[
+		{"id": 0, "peso": 1.0, "label": "Sem chuva"},
+		{"id": 1, "peso": 1.1, "label": "Garoa"},
+		{"id": 2, "peso": 1.2, "label": "Chuva fraca"},
+		{"id": 3, "peso": 1.3, "label": "Chuva moderada"},
+		{"id": 4, "peso": 2.0, "label": "Chuva forte"},
+		{"id": 5, "peso": 2.5, "label": "Chuva muito forte"},
+		{"id": 6, "peso": 3.0, "label": "Chuva extrema"}
+	],
+
+	"hora": 
+	[
+		{"id": 1, "peso": 0.9, "inicio": "00:00", "fim": "05:59", "label": "Madrugada"},
+		{"id": 2, "peso": 1.8, "inicio": "06:00", "fim": "08:59", "label": "Pico da manhã"},
+		{"id": 3, "peso": 1.2, "inicio": "09:00", "fim": "11:59", "label": "Manhã"},
+		{"id": 4, "peso": 1.4, "inicio": "12:00", "fim": "13:59", "label": "Almoço"},
+		{"id": 5, "peso": 1.3, "inicio": "14:00", "fim": "16:59", "label": "Tarde"},
+		{"id": 6, "peso": 2.0, "inicio": "17:00", "fim": "19:59", "label": "Pico da noite"},
+		{"id": 7, "peso": 1.0, "inicio": "20:00", "fim": "23:59", "label": "Noite"}
+	],
+
+	"largura": 
+	[
+		{"id": 1, "peso": 1.5, "label": "Estreita"},
+		{"id": 2, "peso": 1.0, "label": "Intermediária"},
+		{"id": 3, "peso": 0.5, "label": "Larga"}
+	],
+
+	"fluxo": 
+	[
+		{"id": 1, "peso": 0.5, "label": "Muito baixo"},
+		{"id": 2, "peso": 1.0, "label": "Baixo"},
+		{"id": 3, "peso": 1.5, "label": "Médio"},
+		{"id": 4, "peso": 2.0, "label": "Alto"},
+		{"id": 5, "peso": 2.5, "label": "Muito alto"}
+	],
+
+	"tipo": 
+	[
+		{"id": 1, "peso": 1.0, "label": "Residencial"},
+		{"id": 2, "peso": 1.5, "label": "Coletora"},
+		{"id": 3, "peso": 2.0, "label": "Arterial"},
+		{"id": 4, "peso": 0.5, "label": "Rodovia"}
+	],
+
+	"veiculo": 
+	[
+		{"id": 1, "label": "Automóvel"},
+		{"id": 2, "label": "Caminhão"}
+	],
+	
+	"rio":
+	[
+		{"id": 0, "label": "Via sem rio"},
+		{"id": 1, "label": "Via com rio"}
+	],
+	
+	"comunidade":
+	[
+		{"id": 0, "label": "Não é comunidade"},
+		{"id": 1, "label": "É comunidade"}
+	]
+	
+}

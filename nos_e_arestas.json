@@ -1,0 +1,1663 @@
+{
+	"nos":
+	{
+		"1"  : {"nome": "Águas do Imperador",                "lat": -22.5126560661358, "lon": -43.1723776459694},
+		"2"  : {"nome": "Antigo Fórum",                      "lat": -22.5113031749893, "lon": -43.1778118014336},
+		"3"  : {"nome": "Avenida Barão do Rio Branco",       "lat": -22.5037555287238, "lon": -43.1820954236844},
+		"4"  : {"nome": "Avenida Ipiranga",                  "lat": -22.5048709644746, "lon": -43.1782355904579},
+		"5"  : {"nome": "Avenida Koeler",                    "lat": -22.5061838721343, "lon": -43.1798261404038},
+		"6"  : {"nome": "Avenida Piabanha",                  "lat": -22.5038818181922, "lon": -43.1889992952347},
+		"7"  : {"nome": "Avenida Portugal",                  "lat": -22.5185258766827, "lon": -43.1912630796432},
+		"8"  : {"nome": "Avenida Tiradentes",                "lat": -22.5063697165505, "lon": -43.1774014234543},
+		"9"  : {"nome": "Bairro Bingen",                     "lat": -22.5117194107215, "lon": -43.2146573066711},
+		"10" : {"nome": "Bairro Capela",                     "lat": -22.5175397461782, "lon": -43.2263436913490},
+		"11" : {"nome": "Bairro Castelânea",                 "lat": -22.5321798397445, "lon": -43.1939184665680},
+		"12" : {"nome": "Bairro Moinho Preto",               "lat": -22.4868835591907, "lon": -43.2157140970230},
+		"13" : {"nome": "Bairro Mosela",                     "lat": -22.5039585751932, "lon": -43.1906408071518},
+		"14" : {"nome": "Bairro Valparaíso",                 "lat": -22.5211447871041, "lon": -43.1962037086487},
+		"15" : {"nome": "Banca de Jornal",                   "lat": -22.5096777053537, "lon": -43.1754192709923},
+		"16" : {"nome": "Bar Bárbaros",                      "lat": -22.5309460585919, "lon": -43.2151776552200},
+		"17" : {"nome": "Batalhão",                          "lat": -22.5161274354673, "lon": -43.2006293535233},
+		"18" : {"nome": "Boate Big House",                   "lat": -22.5161992911694, "lon": -43.1690543889999},
+		"19" : {"nome": "Bosque do Imperador",               "lat": -22.5074376976202, "lon": -43.1740728020668},
+		"20" : {"nome": "BR 040",                            "lat": -22.5340329682346, "lon": -43.2195657491684},
+		"21" : {"nome": "Capelas funerárias",                "lat": -22.5074872357063, "lon": -43.1882214546204},
+		"22" : {"nome": "Casa Barão de Mauá",                "lat": -22.5045707321091, "lon": -43.1831842660904},
+		"23" : {"nome": "Catedral de São Pedro de Alcântara","lat": -22.5060748432939, "lon": -43.1799495220184},
+		"24" : {"nome": "Cemitério Fabrício de Matos",       "lat": -22.5107035371053, "lon": -43.1892380118370},
+		"25" : {"nome": "Centro",                            "lat": -22.5098586336694, "lon": -43.1752905250617},
+		"26" : {"nome": "Chafariz",                          "lat": -22.5100444288633, "lon": -43.1756874919959},
+		"27" : {"nome": "Colégio Nossa Senhora do Amparo",   "lat": -22.5072493767313, "lon": -43.1848686933518},
+		"28" : {"nome": "Colégio Terra Santa",               "lat": -22.5153841097702, "lon": -43.1854963302612},
+		"29" : {"nome": "Correio",                           "lat": -22.5088723970247, "lon": -43.1732574105263},
+		"30" : {"nome": "Cruz Vermelha",                     "lat": -22.5045162111456, "lon": -43.1913354512419},
+		"31" : {"nome": "Duas Pontes",                       "lat": -22.5207283107585, "lon": -43.1884333491325},
+		"32" : {"nome": "FAETERJ",                           "lat": -22.5292093319078, "lon": -43.2165724039078},
+		"33" : {"nome": "Hiper Shopping",                    "lat": -22.5233127217564, "lon": -43.1708273291588},
+		"34" : {"nome": "Hospital Santa Teresa",             "lat": -22.5072621556448, "lon": -43.1934032849892},
+		"35" : {"nome": "Hospital SMH",                      "lat": -22.5194946563313, "lon": -43.1939935684204},
+		"36" : {"nome": "Hotel Grande Hotel",                "lat": -22.5100097388237, "lon": -43.1751859188080},
+		"37" : {"nome": "Hotel Solar Imperial",              "lat": -22.5087485472549, "lon": -43.1830957531929},
+		"38" : {"nome": "Igreja do Rosário",                 "lat": -22.5073856616108, "lon": -43.1700494885445},
+		"39" : {"nome": "Igreja do Sagrado",                 "lat": -22.5077201784727, "lon": -43.1879666447640},
+		"40" : {"nome": "Igreja Santo Antônio",              "lat": -22.5278442147209, "lon": -43.1728309392929},
+		"41" : {"nome": "INSS",                              "lat": -22.5088377067139, "lon": -43.1742820143700},
+		"42" : {"nome": "Instituto Teológico Franciscano",   "lat": -22.5229831978814, "lon": -43.1940901279449},
+		"43" : {"nome": "Lago do Quitandinha",               "lat": -22.5303663262924, "lon": -43.2123720645905},
+		"44" : {"nome": "Loja Aladim",                       "lat": -22.5117194507215, "lon": -43.1791394948959},
+		"45" : {"nome": "Loja Americanas",                   "lat": -22.5092515110073, "lon": -43.1740432977676},
+		"46" : {"nome": "Loja Casa & Vídeo",                 "lat": -22.5086149073649, "lon": -43.1727182865143},
+		"47" : {"nome": "Loja Patrone",                      "lat": -22.5294100104293, "lon": -43.1966757774353},
+		"48" : {"nome": "Mercado PetroFrutas",               "lat": -22.5112288842316, "lon": -43.1776374578476},
+		"49" : {"nome": "Museu Cocco Barçante",              "lat": -22.5323755590349, "lon": -43.1998595595360},
+		"50" : {"nome": "Museu de Cera",                     "lat": -22.5099031908607, "lon": -43.1831037998199},
+		"51" : {"nome": "Museu Imperial",                    "lat": -22.5076384077550, "lon": -43.1766718626022},
+		"52" : {"nome": "Obelisco",                          "lat": -22.5102104452288, "lon": -43.1756097078323},
+		"53" : {"nome": "Padaria Sul América",               "lat": -22.5121059513504, "lon": -43.1795230507851},
+		"54" : {"nome": "Palácio de Cristal",                "lat": -22.5047444889284, "lon": -43.1832916544510},
+		"55" : {"nome": "Palácio Itaboraí",                  "lat": -22.5153494210933, "lon": -43.1874006986618},
+		"56" : {"nome": "Palácio Quitandinha",               "lat": -22.5254403610860, "lon": -43.2115915417671},
+		"57" : {"nome": "Pizzaria Sotilles",                 "lat": -22.5108798991239, "lon": -43.1989323181988},
+		"58" : {"nome": "Ponte Bingen",                      "lat": -22.5109096332374, "lon": -43.1991200728298},
+		"59" : {"nome": "Ponte Fones",                       "lat": -22.5334210421917, "lon": -43.2001787424088},
+		"60" : {"nome": "Ponte Mosela",                      "lat": -22.5045880778009, "lon": -43.1912228465080},
+		"61" : {"nome": "Praça 14 Bis",                      "lat": -22.5089640785186, "lon": -43.1833210587502},
+		"62" : {"nome": "Praça da Águia",                    "lat": -22.5077548690659, "lon": -43.1769132614136},
+		"63" : {"nome": "Praça da Bandeira",                 "lat": -22.5098263771619, "lon": -43.1832003593445},
+		"64" : {"nome": "Praça da Liberdade",                "lat": -22.5101261981313, "lon": -43.1823876500130},
+		"65" : {"nome": "Praça Dom Pedro",                   "lat": -22.5097817766308, "lon": -43.1758162375069},
+		"66" : {"nome": "Praça dos Expedicionários",         "lat": -22.5097470855572, "lon": -43.1750357151031},
+		"67" : {"nome": "Praça Oswaldo Cruz",                "lat": -22.5080209040003, "lon": -43.1885728240013},
+		"68" : {"nome": "Praça Pasteur",                     "lat": -22.5226313745310, "lon": -43.1834471225739},
+		"69" : {"nome": "Pronto Socorro do Alto da Serra",   "lat": -22.5278459451845, "lon": -43.1721711158752},
+		"70" : {"nome": "Relógio das Flores",                "lat": -22.5106500001721, "lon": -43.1837341189384},
+		"71" : {"nome": "Restaurante D'Angelo",              "lat": -22.5101658438306, "lon": -43.1759208440781},
+		"72" : {"nome": "Restaurante El Sombrero",           "lat": -22.5197052597041, "lon": -43.1942456960678},
+		"73" : {"nome": "Restaurante Gehren",                "lat": -22.5040627501717, "lon": -43.1889563798904},
+		"74" : {"nome": "Restaurante Marowill",              "lat": -22.5089194767184, "lon": -43.1824573874474},
+		"75" : {"nome": "Restaurante Odin",                  "lat": -22.5070858346986, "lon": -43.1850859522820},
+		"76" : {"nome": "Rodoviária",                        "lat": -22.5209217976107, "lon": -43.2277250289917},
+		"77" : {"nome": "Rua 13 de Maio",                    "lat": -22.5059112998721, "lon": -43.1801265478134},
+		"78" : {"nome": "Rua 24 de Maio",                    "lat": -22.5144822013433, "lon": -43.1757760047913},
+		"79" : {"nome": "Rua Alberto Torres",                "lat": -22.5033466163685, "lon": -43.1698322296143},
+		"80" : {"nome": "Rua Caldas Viana",                  "lat": -22.5086324245494, "lon": -43.1692850589752},
+		"81" : {"nome": "Rua Chile",                         "lat": -22.5259687050438, "lon": -43.1717956066132},
+		"82" : {"nome": "Rua da Batata Frita",               "lat": -22.5223514204587, "lon": -43.1980327590815},
+		"83" : {"nome": "Rua da Feira",                      "lat": -22.5088525730910, "lon": -43.1696820259094},
+		"84" : {"nome": "Rua da Imperatiz",                  "lat": -22.5063598048546, "lon": -43.1796088814735},
+		"85" : {"nome": "Rua Dr. Nelson de Sá Erp",          "lat": -22.5118458198922, "lon": -43.1797808145614},
+		"86" : {"nome": "Rua Dr. Thouzet",                   "lat": -22.5328338879334, "lon": -43.2048404216766},
+		"87" : {"nome": "Rua General Osório",                "lat": -22.5118978542230, "lon": -43.1790187545903},
+		"88" : {"nome": "Rua Gonçalves Dias",                "lat": -22.5166328963379, "lon": -43.1914696097374},
+		"89" : {"nome": "Rua Marechal Deodoro",              "lat": -22.5113150048608, "lon": -43.1776642799377},
+		"90" : {"nome": "Rua Nilo Peçanha",                  "lat": -22.5095017768670, "lon": -43.1759583950043},
+		"91" : {"nome": "Rua Padre Siqueira",                "lat": -22.5050489768133, "lon": -43.1825190782547},
+		"92" : {"nome": "Rua Paulino Afonso",                "lat": -22.5072518288269, "lon": -43.1884952086939},
+		"93" : {"nome": "Rua Paulo Barbosa",                 "lat": -22.5087600024232, "lon": -43.1726440919880},
+		"94" : {"nome": "Rua Rockfeller",                    "lat": -22.5134811752098, "lon": -43.1887364387512},
+		"95" : {"nome": "Rua Santos Dumont",                 "lat": -22.5085948742943, "lon": -43.1690382957459},
+		"96" : {"nome": "Rua Teresa",                        "lat": -22.5146603046049, "lon": -43.1754353642464},
+		"97" : {"nome": "Rua Visconde do Bom Retiro",        "lat": -22.5124231252048, "lon": -43.1724715232849},
+		"98" : {"nome": "Shopping Pátio Petrópolis",         "lat": -22.5126932336901, "lon": -43.1777862038803},
+		"99" : {"nome": "Tabacaria Be Happy",                "lat": -22.5072741353103, "lon": -43.1852576136589},
+		"100": {"nome": "Teatro Dom Pedro",                  "lat": -22.5093679719435, "lon": -43.1756713986397},
+		"101": {"nome": "Tribuna de Petrópolis",             "lat": -22.5112288390003, "lon": -43.1780692034990},
+		"102": {"nome": "Universidade Estácio",              "lat": -22.5069222924725, "lon": -43.1935322264896},
+		"103": {"nome": "UPA Centro",                        "lat": -22.5165808637895, "lon": -43.1838011741638},
+		"104": {"nome": "Vila Itararé",                      "lat": -22.5091201847062, "lon": -43.1822133064270},
+		"105": {"nome": "Vila Militar",                      "lat": -22.5094918653956, "lon": -43.1953856348991},
+		"106": {"nome": "Vila São José",                     "lat": -22.5075145126460, "lon": -43.1915661693510},
+		"107": {"nome": "Volkswagen",                        "lat": -22.5287212007062, "lon": -43.1961688399315}
+	},
+
+	"arestas":
+	[
+		{"origem": 1,	"destino": 97,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 1,	"destino": 80,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 2,	"destino": 101,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 2,	"destino": 48,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 3,	"destino": 77,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 3,	"destino": 22,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 4,	"destino": 77,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 4,	"destino": 79,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 5,	"destino": 84,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 1, "comunidade": 0},
+		{"origem": 5,	"destino": 74,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 6,	"destino": 13,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 7,	"destino": 88,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 7,	"destino": 35,	"rio": 0, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 7,	"destino": 31,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 8,	"destino": 4,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 2, "comunidade": 0},
+		{"origem": 9,	"destino": 10,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 9,	"destino": 57,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 10,	"destino": 9,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 11,	"destino": 59,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 11,	"destino": 47,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 11,	"destino": 68,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 12,	"destino": 13,	"rio": 1, "chuva": 6, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 1},
+		{"origem": 13,	"destino": 12,	"rio": 1, "chuva": 6, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 1},
+		{"origem": 13,	"destino": 30,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 14,	"destino": 42,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 14,	"destino": 72,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 14,	"destino": 82,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 15,	"destino": 100,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 16,	"destino": 32,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 16,	"destino": 20,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 16,	"destino": 43,	"rio": 0, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 17,	"destino": 105,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 17,	"destino": 88,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 18,	"destino": 1,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 18,	"destino": 33,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 19,	"destino": 29,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 19,	"destino": 79,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 20,	"destino": 16,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 20,	"destino": 76,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 4, "tipo": 4, "comunidade": 0},
+		{"origem": 21,	"destino": 92,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 21,	"destino": 67,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 1, "comunidade": 0},
+		{"origem": 21,	"destino": 39,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 22,	"destino": 54,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 22,	"destino": 6,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 23,	"destino": 5,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 23,	"destino": 8,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 24,	"destino": 67,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 1, "comunidade": 1},
+		{"origem": 24,	"destino": 94,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 1},
+		{"origem": 25,	"destino": 15,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 25,	"destino": 26,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 26,	"destino": 52,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 26,	"destino": 71,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 27,	"destino": 75,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 27,	"destino": 91,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 28,	"destino": 55,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 28,	"destino": 103,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 29,	"destino": 45,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 30,	"destino": 60,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 30,	"destino": 102,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 31,	"destino": 103,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 31,	"destino": 68,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 31,	"destino": 7,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 31,	"destino": 107,	"rio": 1, "chuva": 3, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 32,	"destino": 16,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 32,	"destino": 56,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 33,	"destino": 18,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 33,	"destino": 81,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 34,	"destino": 102,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 34,	"destino": 106,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 35,	"destino": 72,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 35,	"destino": 7,	"rio": 0, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 36,	"destino": 25,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 36,	"destino": 93,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 37,	"destino": 27,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 37,	"destino": 61,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 38,	"destino": 46,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 38,	"destino": 79,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 39,	"destino": 21,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 39,	"destino": 99,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 40,	"destino": 69,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 1, "comunidade": 0},
+		{"origem": 40,	"destino": 68,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 41,	"destino": 100,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 41,	"destino": 19,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 42,	"destino": 14,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 42,	"destino": 107,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 43,	"destino": 16,	"rio": 0, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 43,	"destino": 56,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 43,	"destino": 86,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 44,	"destino": 87,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 44,	"destino": 85,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 45,	"destino": 41,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 45,	"destino": 66,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 46,	"destino": 29,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 46,	"destino": 93,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 47,	"destino": 107,	"rio": 1, "chuva": 3, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 47,	"destino": 11,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 47,	"destino": 49,	"rio": 1, "chuva": 3, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 48,	"destino": 52,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 49,	"destino": 59,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 49,	"destino": 47,	"rio": 1, "chuva": 3, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 50,	"destino": 70,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 50,	"destino": 64,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 51,	"destino": 8,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 51,	"destino": 62,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 52,	"destino": 36,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 53,	"destino": 85,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 53,	"destino": 87,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 54,	"destino": 75,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 54,	"destino": 91,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 55,	"destino": 94,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 55,	"destino": 28,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 55,	"destino": 88,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 56,	"destino": 32,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 56,	"destino": 43,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 1, "tipo": 1, "comunidade": 0},
+		{"origem": 56,	"destino": 82,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 1},
+		{"origem": 57,	"destino": 58,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 57,	"destino": 105,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 58,	"destino": 57,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 58,	"destino": 9,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 59,	"destino": 86,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 59,	"destino": 11,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 59,	"destino": 49,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 60,	"destino": 73,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 61,	"destino": 63,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 62,	"destino": 51,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 62,	"destino": 90,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 63,	"destino": 50,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 63,	"destino": 70,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 64,	"destino": 50,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 64,	"destino": 104,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 65,	"destino": 71,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 65,	"destino": 26,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 66,	"destino": 15,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 66,	"destino": 25,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 67,	"destino": 24,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 1},
+		{"origem": 67,	"destino": 39,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 68,	"destino": 11,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 68,	"destino": 31,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 68,	"destino": 40,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 68,	"destino": 78,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 1},
+		{"origem": 69,	"destino": 81,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 70,	"destino": 28,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 71,	"destino": 101,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 72,	"destino": 35,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 72,	"destino": 14,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 72,	"destino": 42,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 73,	"destino": 6,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 73,	"destino": 54,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 74,	"destino": 37,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 75,	"destino": 99,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 76,	"destino": 12,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 4, "comunidade": 0},
+		{"origem": 76,	"destino": 10,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 4, "comunidade": 0},
+		{"origem": 77,	"destino": 3,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 77,	"destino": 23,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 78,	"destino": 68,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 1},
+		{"origem": 78,	"destino": 98,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 78,	"destino": 96,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 79,	"destino": 4,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 79,	"destino": 19,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 80,	"destino": 38,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 80,	"destino": 95,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 81,	"destino": 33,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 81,	"destino": 40,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 82,	"destino": 14,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 82,	"destino": 56,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 1},
+		{"origem": 82,	"destino": 86,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 1, "comunidade": 1},
+		{"origem": 83,	"destino": 97,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 83,	"destino": 80,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 84,	"destino": 62,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 85,	"destino": 64,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 86,	"destino": 43,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 86,	"destino": 82,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 1, "comunidade": 1},
+		{"origem": 86,	"destino": 59,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 87,	"destino": 98,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 87,	"destino": 2,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 88,	"destino": 35,	"rio": 0, "chuva": 4, "veiculo": 0, "largura": 2, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 88,	"destino": 17,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 88,	"destino": 7,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 88,	"destino": 55,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 89,	"destino": 2,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 89,	"destino": 48,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 90,	"destino": 65,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 90,	"destino": 100,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 91,	"destino": 3,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 92,	"destino": 73,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 92,	"destino": 21,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 93,	"destino": 83,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 93,	"destino": 38,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 94,	"destino": 88,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 94,	"destino": 55,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 94,	"destino": 24,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 1},
+		{"origem": 95,	"destino": 18,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 96,	"destino": 78,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 96,	"destino": 33,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 97,	"destino": 96,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 98,	"destino": 78,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 1, "fluxo": 3, "tipo": 3, "comunidade": 0},
+		{"origem": 98,	"destino": 89,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 99,	"destino": 39,	"rio": 0, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 99,	"destino": 61,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 100,	"destino": 90,	"rio": 1, "chuva": 5, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 100,	"destino": 41,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 100,	"destino": 51,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 101,	"destino": 44,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 102,	"destino": 34,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 4, "tipo": 3, "comunidade": 0},
+		{"origem": 102,	"destino": 58,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 103,	"destino": 31,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 103,	"destino": 53,	"rio": 1, "chuva": 5, "veiculo": 1, "largura": 3, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 104,	"destino": 74,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 104,	"destino": 84,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 105,	"destino": 17,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 2, "tipo": 1, "comunidade": 0},
+		{"origem": 105,	"destino": 34,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 2, "fluxo": 4, "tipo": 2, "comunidade": 0},
+		{"origem": 106,	"destino": 60,	"rio": 1, "chuva": 6, "veiculo": 1, "largura": 1, "fluxo": 2, "tipo": 2, "comunidade": 0},
+		{"origem": 106,	"destino": 92,	"rio": 0, "chuva": 0, "veiculo": 1, "largura": 2, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 107,	"destino": 42,	"rio": 0, "chuva": 0, "veiculo": 0, "largura": 1, "fluxo": 3, "tipo": 2, "comunidade": 0},
+		{"origem": 107,	"destino": 47,	"rio": 1, "chuva": 3, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0},
+		{"origem": 107,	"destino": 31,	"rio": 1, "chuva": 4, "veiculo": 1, "largura": 1, "fluxo": 5, "tipo": 3, "comunidade": 0}
+	],
+	
+	"geometria":
+	{
+		"1-80":
+		[
+			{"lat": -22.5123042168947, "lon": -43.1715247035027},
+			{"lat": -22.5118036968481, "lon": -43.1708595156670},
+			{"lat": -22.5109984008906, "lon": -43.1708568334579},
+			{"lat": -22.5105647780475, "lon": -43.1700038909912},
+			{"lat": -22.5098313328857, "lon": -43.1695908308029},
+			{"lat": -22.5090879723327, "lon": -43.1692743301392}
+		],
+		
+		"3-77":
+		[
+			{"lat": -22.5045385186758, "lon": -43.1817251443863},
+			{"lat": -22.5052026094760, "lon": -43.1809687614441}
+		],
+		"3-22":
+		[
+			{"lat": -22.5037802618479, "lon": -43.1824868917465},
+			{"lat": -22.5043353260774, "lon": -43.1825566291809},
+			{"lat": -22.5047119755358, "lon": -43.1828892230988}
+		],
+		"4-77":
+		[
+			{"lat": -22.5052371857166, "lon": -43.1795366872048}
+		],
+		"4-79":
+		[
+			{"lat": -22.5043749734371, "lon": -43.1764841079712},
+			{"lat": -22.5036266276050, "lon": -43.1737911701202},
+			{"lat": -22.5027841142066, "lon": -43.1707763671875}
+		],
+		"6-13":
+		[
+			{"lat": -22.5039809772952, "lon": -43.1895089149475},
+			{"lat": -22.5040776179622, "lon": -43.1901982426643}
+		],
+		"7-88":
+		[
+			{"lat": -22.5175620456895, "lon": -43.1914347410202}
+		],
+		"7-35":
+		[
+			{"lat": -22.5189792961361, "lon": -43.1927865743637}
+		],
+		"7-31":
+		[
+			{"lat": -22.5189297421944, "lon": -43.1909090260357},
+			{"lat": -22.5201586753124, "lon": -43.1904852370114},
+			{"lat": -22.5207235844500, "lon": -43.1904691437573},
+			{"lat": -22.5208226910781, "lon": -43.1895947436184},
+			{"lat": -22.5206591651036, "lon": -43.1888061741681}
+		],
+		"9-10":
+		[
+			{"lat": -22.5122051041581, "lon": -43.2149738073349},
+			{"lat": -22.5125569540514, "lon": -43.2153171300888},
+			{"lat": -22.5128542912913, "lon": -43.2159662246704},
+			{"lat": -22.5127155339923, "lon": -43.2167977094650},
+			{"lat": -22.5124578414960, "lon": -43.2176077365875},
+			{"lat": -22.5126213771744, "lon": -43.2187288999558},
+			{"lat": -22.5132804735532, "lon": -43.2210999727249},
+			{"lat": -22.5141080562853, "lon": -43.2226020097733},
+			{"lat": -22.5148513898449, "lon": -43.2239699363709},
+			{"lat": -22.5161646026972, "lon": -43.2246512174606},
+			{"lat": -22.5169029697267, "lon": -43.2252413034439},
+			{"lat": -22.5173340949601, "lon": -43.2258957624435}
+		],
+		"9-57":
+		[
+			{"lat": -22.5113403425164, "lon": -43.2140403985977},
+			{"lat": -22.5111198150430, "lon": -43.2133349776268},
+			{"lat": -22.5109761003204, "lon": -43.2119804620743},
+			{"lat": -22.5111346820747, "lon": -43.2100734114647},
+			{"lat": -22.5112982193183, "lon": -43.2092285156250},
+			{"lat": -22.5110033565724, "lon": -43.2087001204491},
+			{"lat": -22.5109314991693, "lon": -43.2078498601913},
+			{"lat": -22.5109091985883, "lon": -43.2073134183884},
+			{"lat": -22.5104656640638, "lon": -43.2066079974175},
+			{"lat": -22.5104408855568, "lon": -43.2058784365654},
+			{"lat": -22.5108497303548, "lon": -43.2046043872833},
+			{"lat": -22.5104780533157, "lon": -43.2041805982590},
+			{"lat": -22.5107778728718, "lon": -43.2035556435585},
+			{"lat": -22.5113254755068, "lon": -43.2033357024193},
+			{"lat": -22.5117566181366, "lon": -43.2016754150391},
+			{"lat": -22.5113229976717, "lon": -43.2011818885803},
+			{"lat": -22.5112164507207, "lon": -43.2006374001503},
+			{"lat": -22.5114493672047, "lon": -43.1997656822205},
+			{"lat": -22.5113304311768, "lon": -43.1991031765938}
+		],
+		"10-9":
+		[
+			{"lat": -22.5173340949601, "lon": -43.2258957624435},
+			{"lat": -22.5169029697267, "lon": -43.2252413034439},
+			{"lat": -22.5161646026972, "lon": -43.2246512174606},
+			{"lat": -22.5148513898449, "lon": -43.2239699363709},
+			{"lat": -22.5141080562853, "lon": -43.2226020097733},
+			{"lat": -22.5132804735532, "lon": -43.2210999727249},
+			{"lat": -22.5126213771744, "lon": -43.2187288999558},
+			{"lat": -22.5124578414960, "lon": -43.2176077365875},
+			{"lat": -22.5127155339923, "lon": -43.2167977094650},
+			{"lat": -22.5128542912913, "lon": -43.2159662246704},
+			{"lat": -22.5125569540514, "lon": -43.2153171300888},
+			{"lat": -22.5122051041581, "lon": -43.2149738073349}		
+		],
+		"11-59":
+		[		
+			{"lat": -22.5328660947718, "lon": -43.1945756077766},
+			{"lat": -22.5337654057640, "lon": -43.1953829526901},
+			{"lat": -22.5343005301868, "lon": -43.1961768865585},
+			{"lat": -22.5347093043904, "lon": -43.1968823075295},
+			{"lat": -22.5345334077602, "lon": -43.1977728009224},
+			{"lat": -22.5342361171716, "lon": -43.1981080770493},
+			{"lat": -22.5340800393564, "lon": -43.1986713409424}
+		],
+		"11-47":
+		[
+			{"lat": -22.5316521395161, "lon": -43.1945219635963},
+			{"lat": -22.5311442571105, "lon": -43.1950959563255},
+			{"lat": -22.5301829916400, "lon": -43.1957986950874}
+		],
+		"11-68":
+		[
+			{"lat": -22.5300987567181, "lon": -43.1920194625855},
+			{"lat": -22.5291672141563, "lon": -43.1905710697174},
+			{"lat": -22.5279482713154, "lon": -43.1896698474884},
+			{"lat": -22.5274800160229, "lon": -43.1886559724808},
+			{"lat": -22.5259092432902, "lon": -43.1870386004448},
+			{"lat": -22.5250173139146, "lon": -43.1861588358879},
+			{"lat": -22.5242715574332, "lon": -43.1856599450111},
+			{"lat": -22.5236174687006, "lon": -43.1847587227821},
+			{"lat": -22.5230500937692, "lon": -43.1836777925491}
+		],
+		"12-13":
+		[
+			{"lat": -22.4854073701762, "lon": -43.2142710685730},
+			{"lat": -22.4847431843561, "lon": -43.2142281532288},
+			{"lat": -22.4840988219330, "lon": -43.2131016254425},
+			{"lat": -22.4847134446180, "lon": -43.2120180130005},
+			{"lat": -22.4841583016669, "lon": -43.2114708423615},
+			{"lat": -22.4852289325078, "lon": -43.2109987735748},
+			{"lat": -22.4862004236974, "lon": -43.2107090950012},
+			{"lat": -22.4867753846590, "lon": -43.2087457180023},
+			{"lat": -22.4866465143063, "lon": -43.2072436809540},
+			{"lat": -22.4874098215691, "lon": -43.2080590724945},
+			{"lat": -22.4881235596169, "lon": -43.2075119018555},
+			{"lat": -22.4882920805633, "lon": -43.2059454917908},
+			{"lat": -22.4877369519646, "lon": -43.2048940658569},
+			{"lat": -22.4880640815868, "lon": -43.2044327259064},
+			{"lat": -22.4876378216233, "lon": -43.2036280632019},
+			{"lat": -22.4883614714816, "lon": -43.2042932510376},
+			{"lat": -22.4887877292164, "lon": -43.2056021690369},
+			{"lat": -22.4892139856384, "lon": -43.2068145275116},
+			{"lat": -22.4896600665346, "lon": -43.2056128978729},
+			{"lat": -22.4902151874197, "lon": -43.2048833370209},
+			{"lat": -22.4914245502095, "lon": -43.2047438621521},
+			{"lat": -22.4920193149177, "lon": -43.2036066055298},
+			{"lat": -22.4927032911718, "lon": -43.2022440433502},
+			{"lat": -22.4930403217058, "lon": -43.2015252113342},
+			{"lat": -22.4937143803111, "lon": -43.2013213634491},
+			{"lat": -22.4949633625768, "lon": -43.2005703449249},
+			{"lat": -22.4957563613381, "lon": -43.2000339031219},
+			{"lat": -22.4966707823924, "lon": -43.2001358270645},
+			{"lat": -22.4975306796040, "lon": -43.1998300552368},
+			{"lat": -22.4983831372701, "lon": -43.1992238759995},
+			{"lat": -22.4997212869645, "lon": -43.1990629434586},
+			{"lat": -22.5002515871508, "lon": -43.1982797384262},
+			{"lat": -22.5004646978679, "lon": -43.1970030069351},
+			{"lat": -22.5005142584528, "lon": -43.1959515810013},
+			{"lat": -22.5016442349690, "lon": -43.1945514678955},
+			{"lat": -22.5017284872342, "lon": -43.1938380002976},
+			{"lat": -22.5027642903001, "lon": -43.1922501325607},
+			{"lat": -22.5032598871094, "lon": -43.1913650035858}
+		],
+		"13-12":
+		[
+			{"lat": -22.5032598871094, "lon": -43.1913650035858},
+			{"lat": -22.5027642903001, "lon": -43.1922501325607},
+			{"lat": -22.5017284872342, "lon": -43.1938380002976},
+			{"lat": -22.5016442349690, "lon": -43.1945514678955},
+			{"lat": -22.5005142584528, "lon": -43.1959515810013},
+			{"lat": -22.5004646978679, "lon": -43.1970030069351},
+			{"lat": -22.5002515871508, "lon": -43.1982797384262},
+			{"lat": -22.4997212869645, "lon": -43.1990629434586},
+			{"lat": -22.4983831372701, "lon": -43.1992238759995},
+			{"lat": -22.4975306796040, "lon": -43.1998300552368},
+			{"lat": -22.4966707823924, "lon": -43.2001358270645},
+			{"lat": -22.4957563613381, "lon": -43.2000339031219},
+			{"lat": -22.4949633625768, "lon": -43.2005703449249},
+			{"lat": -22.4937143803111, "lon": -43.2013213634491},
+			{"lat": -22.4930403217058, "lon": -43.2015252113342},
+			{"lat": -22.4927032911718, "lon": -43.2022440433502},
+			{"lat": -22.4920193149177, "lon": -43.2036066055298},
+			{"lat": -22.4914245502095, "lon": -43.2047438621521},
+			{"lat": -22.4902151874197, "lon": -43.2048833370209},
+			{"lat": -22.4896600665346, "lon": -43.2056128978729},
+			{"lat": -22.4892139856384, "lon": -43.2068145275116},
+			{"lat": -22.4887877292164, "lon": -43.2056021690369},
+			{"lat": -22.4883614714816, "lon": -43.2042932510376},
+			{"lat": -22.4876378216233, "lon": -43.2036280632019},
+			{"lat": -22.4880640815868, "lon": -43.2044327259064},
+			{"lat": -22.4877369519646, "lon": -43.2048940658569},
+			{"lat": -22.4882920805633, "lon": -43.2059454917908},
+			{"lat": -22.4881235596169, "lon": -43.2075119018555},
+			{"lat": -22.4874098215691, "lon": -43.2080590724945},
+			{"lat": -22.4866465143063, "lon": -43.2072436809540},
+			{"lat": -22.4867753846590, "lon": -43.2087457180023},
+			{"lat": -22.4862004236974, "lon": -43.2107090950012},
+			{"lat": -22.4852289325078, "lon": -43.2109987735748},
+			{"lat": -22.4841583016669, "lon": -43.2114708423615},
+			{"lat": -22.4847134446180, "lon": -43.2120180130005},
+			{"lat": -22.4840988219330, "lon": -43.2131016254425},
+			{"lat": -22.4847431843561, "lon": -43.2142281532288},
+			{"lat": -22.4854073701762, "lon": -43.2142710685730}
+		],
+		"14-42":
+		[
+			{"lat": -22.5220193979771, "lon": -43.1951737403870}
+		],
+		"14-72":
+		[
+			{"lat": -22.5209168422845, "lon": -43.1959730386734},
+			{"lat": -22.5206641204145, "lon": -43.1951791048050},
+			{"lat": -22.5200793896100, "lon": -43.1945970654488}
+		],
+		"14-82":
+		[
+			{"lat": -22.5215114801554, "lon": -43.1965363025665},
+			{"lat": -22.5218633063574, "lon": -43.1967669725418},
+			{"lat": -22.5217840216577, "lon": -43.1971317529678},
+			{"lat": -22.5215213907649, "lon": -43.1972122192383},
+			{"lat": -22.5213975080951, "lon": -43.1974750757217},
+			{"lat": -22.5209168422845, "lon": -43.1976306438446},
+			{"lat": -22.5212884912537, "lon": -43.1978613138199},
+			{"lat": -22.5219425910117, "lon": -43.1975984573364}
+		],
+		"16-32":
+		[
+			{"lat": -22.5306586702348, "lon": -43.2154110074043},
+			{"lat": -22.5303266863882, "lon": -43.2154083251953},
+			{"lat": -22.5295983011228, "lon": -43.2167655229568}
+		],
+		"16-20":
+		[
+			{"lat": -22.532308667663, "lon": -43.2170498371124}
+		],
+		"16-43":
+		[
+			{"lat": -22.5297519064984, "lon": -43.2135200500488},
+			{"lat": -22.5296874913617, "lon": -43.2132196426392},
+			{"lat": -22.5298807366816, "lon": -43.2127583026886}
+		],
+		"17-105":
+		[
+			{"lat": -22.5152379217160, "lon": -43.1999427080154},
+			{"lat": -22.5150000560770, "lon": -43.1989502906799},
+			{"lat": -22.5147275011959, "lon": -43.1981885433197},
+			{"lat": -22.5131764059128, "lon": -43.1988805532456},
+			{"lat": -22.5129434923386, "lon": -43.1985747814179},
+			{"lat": -22.5128939362083, "lon": -43.1979310512543},
+			{"lat": -22.5133845411152, "lon": -43.1978505849838},
+			{"lat": -22.5134935641914, "lon": -43.1970244646072},
+			{"lat": -22.5139891225449, "lon": -43.1964236497879},
+			{"lat": -22.5133597631313, "lon": -43.1957423686981},
+			{"lat": -22.5136521430578, "lon": -43.1952488422394},
+			{"lat": -22.5135183421513, "lon": -43.1947928667068},
+			{"lat": -22.5137462991737, "lon": -43.1945514678955},
+			{"lat": -22.5137289546308, "lon": -43.1945300102234},
+			{"lat": -22.5134142746900, "lon": -43.1946185231209},
+			{"lat": -22.5129806594246, "lon": -43.1950530409813},
+			{"lat": -22.5126188993625, "lon": -43.1953883171082},
+			{"lat": -22.5116674163235, "lon": -43.1954661011696},
+			{"lat": -22.5110950366532, "lon": -43.1955170631409},
+			{"lat": -22.5108224740725, "lon": -43.1957504153252},
+			{"lat": -22.5103392936316, "lon": -43.1956109404564},
+			{"lat": -22.5098263771619, "lon": -43.1954339146614}
+		],
+		"17-88":
+		[
+			{"lat": -22.5170764110742, "lon": -43.2001036405563},
+			{"lat": -22.5173142731398, "lon": -43.1996369361877},
+			{"lat": -22.5172250749132, "lon": -43.1987518072128},
+			{"lat": -22.5168286376540, "lon": -43.1976950168610},
+			{"lat": -22.5162438906209, "lon": -43.1967777013779},
+			{"lat": -22.5155649863011, "lon": -43.1963270902634},
+			{"lat": -22.5154163206766, "lon": -43.1959462165833},
+			{"lat": -22.5158821390992, "lon": -43.1956726312637},
+			{"lat": -22.5158325840224, "lon": -43.1948196887970},
+			{"lat": -22.5159069166309, "lon": -43.1941223144531},
+			{"lat": -22.5158722280852, "lon": -43.1937736272812},
+			{"lat": -22.5161596472004, "lon": -43.1933605670929},
+			{"lat": -22.5165461754130, "lon": -43.1934624910355},
+			{"lat": -22.5168435040717, "lon": -43.1932908296585},
+			{"lat": -22.5168038602875, "lon": -43.1925612688065},
+			{"lat": -22.5165461754130, "lon": -43.1917726993561}
+		],
+		"18-1":
+		[
+			{"lat": -22.5159614271850, "lon": -43.1692716479302},
+			{"lat": -22.5159614271850, "lon": -43.1692716479302},
+			{"lat": -22.5151982774713, "lon": -43.1692340970039},
+			{"lat": -22.5150149226915, "lon": -43.1697463989258},
+			{"lat": -22.5153543766191, "lon": -43.1705671548843},
+			{"lat": -22.5152775659494, "lon": -43.1709480285645},
+			{"lat": -22.5145168902378, "lon": -43.1714308261871},
+			{"lat": -22.5142022120907, "lon": -43.1718787550926},
+			{"lat": -22.5138701887021, "lon": -43.1727746129036}	
+		],
+		"18-33":
+		[
+			{"lat": -22.5165759083077, "lon": -43.1688076257706},
+			{"lat": -22.5174356817447, "lon": -43.1690114736557},
+			{"lat": -22.5187810801646, "lon": -43.1688317656517},
+			{"lat": -22.5199199269189, "lon": -43.1687666670675},
+			{"lat": -22.5208350793771, "lon": -43.1691402196884},
+			{"lat": -22.5216626168731, "lon": -43.1695157289505},
+			{"lat": -22.5221878776226, "lon": -43.1695640087128}
+		],
+		"19-79":
+		[
+			{"lat": -22.5053265066604, "lon": -43.1719189882278}
+		],
+		"20-16":
+		[
+			{"lat": -22.5323086676630, "lon": -43.2170498371124}
+		],
+		"20-76":
+		[
+			{"lat": -22.5331113619868, "lon": -43.2196784019470},
+			{"lat": -22.5320262370691, "lon": -43.2191205024719},
+			{"lat": -22.5310352479605, "lon": -43.2186913490295},
+			{"lat": -22.5308717340741, "lon": -43.2200807332993},
+			{"lat": -22.5301136217080, "lon": -43.2208693027496},
+			{"lat": -22.5291176638441, "lon": -43.2217597961426},
+			{"lat": -22.5283050361871, "lon": -43.2239645719528},
+			{"lat": -22.5273140203794, "lon": -43.2266360521317},
+			{"lat": -22.5262437153214, "lon": -43.2278645038605},
+			{"lat": -22.5248513153119, "lon": -43.2281810045242},
+			{"lat": -22.5232111392922, "lon": -43.2275533676147},
+			{"lat": -22.5220664731928, "lon": -43.2272958755493}
+		],
+		"21-67":
+		[
+			{"lat": -22.5077796480523, "lon": -43.1885272264481}
+		],
+		"22-6":
+		[
+			{"lat": -22.5041717805984, "lon": -43.1839889287949},
+			{"lat": -22.5038645128118, "lon": -43.1844770908356},
+			{"lat": -22.5028683657774, "lon": -43.1853836774826},
+			{"lat": -22.5031161642176, "lon": -43.1862044334412},
+			{"lat": -22.5035225526983, "lon": -43.1871163845062},
+			{"lat": -22.5036216716588, "lon": -43.1878459453583}
+		],
+		"23-8":
+		[
+			{"lat": -22.5062606878566, "lon": -43.1786164641380}
+		],
+		"24-67":
+		[
+			{"lat": -22.5105399995582, "lon": -43.1889188289642},
+			{"lat": -22.5100791188485, "lon": -43.1888544559479},
+			{"lat": -22.5094150514684, "lon": -43.1885325908661},
+			{"lat": -22.5088154057952, "lon": -43.1885808706284},
+			{"lat": -22.5085725733364, "lon": -43.1888115406036},
+			{"lat": -22.5083396520059, "lon": -43.1887686252594}
+		],
+		"24-94":
+		[
+			{"lat": -22.5108621195722, "lon": -43.1895035505295},
+			{"lat": -22.5112214063947, "lon": -43.1896376609802},
+			{"lat": -22.5115583918071, "lon": -43.1895089149475},
+			{"lat": -22.5118854650984, "lon": -43.1893882155418},
+			{"lat": -22.5120836909589, "lon": -43.1896296143532},
+			{"lat": -22.5119226324689, "lon": -43.1900426745415},
+			{"lat": -22.5119275881175, "lon": -43.1905281543732},
+			{"lat": -22.5120291788756, "lon": -43.1905201077461},
+			{"lat": -22.5120514792759, "lon": -43.1902089715004},
+			{"lat": -22.5123661623190, "lon": -43.1899300217629},
+			{"lat": -22.5127328786623, "lon": -43.1898254156113},
+			{"lat": -22.5131516278917, "lon": -43.1893426179886}
+		],
+		"27-91":
+		[
+			{"lat": -22.5068429992024, "lon": -43.1844931840897},
+			{"lat": -22.5059682922987, "lon": -43.1838038563728},
+			{"lat": -22.5058047487509, "lon": -43.1827148795128},
+			{"lat": -22.5054504037338, "lon": -43.1825351715088}
+		],
+		"28-55":
+		[
+			{"lat": -22.5151123127459, "lon": -43.1864672334810}
+		],
+		"28-103":
+		[
+			{"lat": -22.5160134599665, "lon": -43.1857055425644},
+			{"lat": -22.5162538016082, "lon": -43.1850591301918},
+			{"lat": -22.5162736235806, "lon": -43.1845307350159}
+		],
+		"30-102":
+		[
+			{"lat": -22.5059162557362, "lon": -43.1924968957901},
+			{"lat": -22.5068083083824, "lon": -43.1926310062409},
+			{"lat": -22.5069222924725, "lon": -43.1930145621300}
+		],
+		"31-103":
+		[
+			{"lat": -22.5195342993437, "lon": -43.1876099109650},
+			{"lat": -22.5190982255825, "lon": -43.1869447231293},
+			{"lat": -22.5177503525301, "lon": -43.1859040260315},
+			{"lat": -22.5171482652830, "lon": -43.1853488087654},
+			{"lat": -22.5166403295575, "lon": -43.1847265362740},
+			{"lat": -22.5167369613759, "lon": -43.1841230392456}
+		],
+		"31-68":
+		[
+			{"lat": -22.5210506360286, "lon": -43.1876957416534},
+			{"lat": -22.5210109934512, "lon": -43.1871056556702},
+			{"lat": -22.5213578656172, "lon": -43.1863653659821},
+			{"lat": -22.5215957203135, "lon": -43.1852710247040},
+			{"lat": -22.5219624121681, "lon": -43.1845307350159},
+			{"lat": -22.5220615179077, "lon": -43.1836080551147}
+		],
+		"31-7":
+		[
+			{"lat": -22.5206591651036, "lon": -43.1888061741681},
+			{"lat": -22.5208226910781, "lon": -43.1895947436184},
+			{"lat": -22.5207235844500, "lon": -43.1904691437573},
+			{"lat": -22.5201586753124, "lon": -43.1904852370114},
+			{"lat": -22.5189297421944, "lon": -43.1909090260357}
+		],
+		"31-107":
+		[
+			{"lat": -22.5210035604667, "lon": -43.1887471675873},
+			{"lat": -22.5216229744713, "lon": -43.1893453001976},
+			{"lat": -22.5226016429392, "lon": -43.1901928782463},
+			{"lat": -22.5230030188886, "lon": -43.1907320022583},
+			{"lat": -22.5234688117386, "lon": -43.1909680366516},
+			{"lat": -22.5239321254092, "lon": -43.1915500760078},
+			{"lat": -22.5251932226639, "lon": -43.1926953792572},
+			{"lat": -22.5262932666646, "lon": -43.1936931610107},
+			{"lat": -22.5270216693580, "lon": -43.1944602727890},
+			{"lat": -22.5275716851734, "lon": -43.1947875022888},
+			{"lat": -22.5280027771193, "lon": -43.1958013772964}
+		],
+		"32-16":
+		[
+			{"lat": -22.5295983011228, "lon": -43.2167655229568},
+			{"lat": -22.5303266863882, "lon": -43.2154083251953},
+			{"lat": -22.5306586702348, "lon": -43.2154110074043}
+		],
+		"32-56":
+		[
+			{"lat": -22.5285527890282, "lon": -43.2163900136948},
+			{"lat": -22.5277451131295, "lon": -43.2161700725555},
+			{"lat": -22.5274378977442, "lon": -43.2157301902771},
+			{"lat": -22.5269126569544, "lon": -43.2146465778351},
+			{"lat": -22.5260405546286, "lon": -43.2126402854920}
+		],
+		"33-18":
+		[
+			{"lat": -22.5221878776226, "lon": -43.1695640087128},
+			{"lat": -22.5216626168731, "lon": -43.1695157289505},
+			{"lat": -22.5208350793771, "lon": -43.1691402196884},
+			{"lat": -22.5199199269189, "lon": -43.1687666670675},
+			{"lat": -22.5187810801646, "lon": -43.1688317656517},
+			{"lat": -22.5174356817447, "lon": -43.1690114736557},
+			{"lat": -22.5165759083077, "lon": -43.1688076257706}
+		],
+		"33-81":
+		[
+			
+		],
+		"34-102":
+		[
+			{"lat": -22.5070635334974, "lon": -43.1934517621994}
+		],
+		"34-106":
+		[
+			{"lat": -22.5072865453481, "lon": -43.1924620270729}
+		],
+		"35-7":
+		[
+			{"lat": -22.5189792961361, "lon": -43.1927865743637}
+		],
+		"36-93":
+		[
+			{"lat": -22.5094001842518, "lon": -43.1739547848702}
+		],
+		"37-27":
+		[
+			{"lat": -22.5079927471692, "lon": -43.1839835643768}
+		],
+		"38-46":
+		[
+			{"lat": -22.5074847778024, "lon": -43.1704062223435},
+			{"lat": -22.5080274376921, "lon": -43.1715005636215}
+		],
+		"38-79":
+		[
+			{"lat": -22.5067934408855, "lon": -43.1690651178360},
+			{"lat": -22.5063325476873, "lon": -43.1682175397873},
+			{"lat": -22.5047119755358, "lon": -43.1676435470581},
+			{"lat": -22.5040726620322, "lon": -43.1686735153198}
+		],
+		"39-99":
+		[
+			{"lat": -22.5081463765614, "lon": -43.1874436140060},
+			{"lat": -22.5081661996964, "lon": -43.1861937046051}
+		],
+		"40-69":
+		[
+			{"lat": -22.5278665125692, "lon": -43.1725010275841}
+		],
+		"40-68":
+		[
+			{"lat": -22.5277599783727, "lon": -43.1754434108734},
+			{"lat": -22.5277302478846, "lon": -43.1778037548065},
+			{"lat": -22.5265410231138, "lon": -43.1803357601166},
+			{"lat": -22.5265410231138, "lon": -43.1803357601166},
+			{"lat": -22.5263056544976, "lon": -43.1820014119148},
+			{"lat": -22.5251709243842, "lon": -43.1825754046440},			
+			{"lat": -22.5242913782555, "lon": -43.1828141212463}
+		],
+		"41-100":
+		[
+			{"lat": -22.5092862022043, "lon": -43.1752341985703}
+		],
+		"41-19":
+		[
+			{"lat": -22.5078391176063, "lon": -43.1748318672180}
+		],
+		"42-14":
+		[
+			{"lat": -22.5220193979771, "lon": -43.1951737403870}
+		],
+		"42-107":
+		[
+			{"lat": -22.5236818866678, "lon": -43.1947982311249},
+			{"lat": -22.5242765126390, "lon": -43.1948652863503},
+			{"lat": -22.5245763022624, "lon": -43.1950289011002},
+			{"lat": -22.5251882674910, "lon": -43.1960400938988},
+			{"lat": -22.5263031769311, "lon": -43.1974938511848},
+			{"lat": -22.5267317952769, "lon": -43.1979900598526},
+			{"lat": -22.5270712204222, "lon": -43.1979927420616},
+			{"lat": -22.5278640350307, "lon": -43.1971210241318}
+		],
+		"43-16":
+		[
+			{"lat": -22.5298807366816, "lon": -43.2127583026886},
+			{"lat": -22.5296874913617, "lon": -43.2132196426392},
+			{"lat": -22.5297519064984, "lon": -43.2135200500488}
+		],
+		"43-56":
+		[
+			{"lat": -22.5298068810473, "lon": -43.2120977196134},
+			{"lat": -22.5292940368305, "lon": -43.2119394692815},
+			{"lat": -22.5286672246464, "lon": -43.2119716557897},
+			{"lat": -22.5277674109938, "lon": -43.2119375467300},
+			{"lat": -22.5267788688870, "lon": -43.2116505503655},
+			{"lat": -22.5265583660486, "lon": -43.2115378975868},
+			{"lat": -22.5261148817460, "lon": -43.2115378975868},
+			{"lat": -22.5254062949336, "lon": -43.2113099098206},
+			{"lat": -22.5251560588623, "lon": -43.2110443711281},
+			{"lat": -22.5250941191707, "lon": -43.2112830877304},
+			{"lat": -22.5252948036707, "lon": -43.2114279270172}
+		],
+		"43-86":
+		[
+			{"lat": -22.5308147519168, "lon": -43.2121333479881},
+			{"lat": -22.5317239861446, "lon": -43.2114949822426},
+			{"lat": -22.5321872721276, "lon": -43.2109853625298},
+			{"lat": -22.5331658657532, "lon": -43.2097220420837},
+			{"lat": -22.5337059473668, "lon": -43.2089120149612},
+			{"lat": -22.5338570707429, "lon": -43.2077237963677},
+			{"lat": -22.5341667492755, "lon": -43.2067635655403},
+			{"lat": -22.5340057165252, "lon": -43.2063397765160},
+			{"lat": -22.5333987452401, "lon": -43.2056263089180},
+			{"lat": -22.5329255535306, "lon": -43.2050684094429}
+		],
+		"44-85":
+		[
+			{"lat": -22.5118953763982, "lon": -43.1794747710228}
+		],
+		"47-107":
+		[
+			{"lat": -22.5291052762632, "lon": -43.1963914632797}
+		],
+		"47-11":
+		[
+			{"lat": -22.5301829916400, "lon": -43.1957986950874},
+			{"lat": -22.5311442571105, "lon": -43.1950959563255},
+			{"lat": -22.5316521395161, "lon": -43.1945219635963}
+		],
+		"47-49":
+		[
+			{"lat": -22.5298658716666, "lon": -43.1972041726112},
+			{"lat": -22.5304431285745, "lon": -43.1980437040329},
+			{"lat": -22.5310302929971, "lon": -43.1987893581390},
+			{"lat": -22.5318354722184, "lon": -43.1994947791100},
+			{"lat": -22.5321897495886, "lon": -43.1998220086098}
+		],
+		"49-59":
+		[
+			{"lat": -22.5327719516846, "lon": -43.1998541951180},
+			{"lat": -22.5329230760828, "lon": -43.1998595595360},
+			{"lat": -22.5331609108663, "lon": -43.2000043988228}
+			
+		],
+		"49-47":
+		[
+			{"lat": -22.5321897495886, "lon": -43.1998220086098},
+			{"lat": -22.5318354722184, "lon": -43.1994947791100},
+			{"lat": -22.5310302929971, "lon": -43.1987893581390},
+			{"lat": -22.5304431285745, "lon": -43.1980437040329},
+			{"lat": -22.5298658716666, "lon": -43.1972041726112}
+		],
+		"50-70":
+		[
+			{"lat": -22.5104780533157, "lon": -43.1836563348770}
+		],
+		"50-64":
+		[
+			{"lat": -22.5100692074186, "lon": -43.1828999519348},
+			{"lat": -22.5101955780977, "lon": -43.1826478242874}
+		],
+		"51-8":
+		[
+			{"lat": -22.5069594611773, "lon": -43.1770661473274}
+		],
+		"53-85":
+		[
+			{"lat": -22.5119597998294, "lon": -43.1796035170555}
+		],
+		"54-75":
+		[
+			{"lat": -22.5058815646838, "lon": -43.1840479373932}
+		],
+		"54-91":
+		[
+			{"lat": -22.5050093296468, "lon": -43.1827658414841}
+		],
+		"55-94":
+		[
+			{"lat": -22.5144053901888, "lon": -43.1881088018417}
+		],
+		"55-28":
+		[
+			{"lat": -22.5151123127459, "lon": -43.1864672334810}
+		],
+		"55-88":
+		[
+			{"lat": -22.5158573615630, "lon": -43.1889402866364},
+			{"lat": -22.5160258487212, "lon": -43.1901472806931},
+			{"lat": -22.5162042466648, "lon": -43.1909090280533}
+		],
+		"56-32":
+		[
+			{"lat": -22.5260405546286, "lon": -43.2126402854920},
+			{"lat": -22.5269126569544, "lon": -43.2146465778351},
+			{"lat": -22.5274378977442, "lon": -43.2157301902771},
+			{"lat": -22.5277451131295, "lon": -43.2161700725555},
+			{"lat": -22.5285527890282, "lon": -43.2163900136948}
+		],
+		"56-43":
+		[
+			{"lat": -22.5257152720410, "lon": -43.2120342683139},
+			{"lat": -22.5260324015432, "lon": -43.2116265725437},
+			{"lat": -22.5266319725190, "lon": -43.2117445897403},
+			{"lat": -22.5268499976832, "lon": -43.2116533946338},
+			{"lat": -22.5278013761910, "lon": -43.2119430732074},
+			{"lat": -22.5287906313375, "lon": -43.2120823860169},
+			{"lat": -22.5295636160143, "lon": -43.2121199369431},
+			{"lat": -22.5297469514889, "lon": -43.2128602266312}
+		],
+		"56-82":
+		[
+			{"lat": -22.5251387157515, "lon": -43.2110202312469},
+			{"lat": -22.5246679733397, "lon": -43.2104998826981},
+			{"lat": -22.5240089312686, "lon": -43.2098883390427},
+			{"lat": -22.5237363941550, "lon": -43.2090783119202},
+			{"lat": -22.5229138243339, "lon": -43.2081395387650},
+			{"lat": -22.5214966142398, "lon": -43.2060259580612},
+			{"lat": -22.5213132678161, "lon": -43.2049638032913},
+			{"lat": -22.5213776868576, "lon": -43.2040411233902},
+			{"lat": -22.5217939322477, "lon": -43.2030647993088},
+			{"lat": -22.5215907650115, "lon": -43.2002699375153},
+			{"lat": -22.5220813390471, "lon": -43.1991434097290}
+		],
+		"57-105":
+		[
+			{"lat": -22.5105449552565, "lon": -43.1988349556923},
+			{"lat": -22.5099552259226, "lon": -43.1983065605164},
+			{"lat": -22.5097991206779, "lon": -43.1979042291641},
+			{"lat": -22.5096132808711, "lon": -43.1966489553452}
+		],
+		"58-9":
+		[
+			{"lat": -22.5112642970018, "lon": -43.1996598961729},
+			{"lat": -22.5110536807672, "lon": -43.2003626349348},
+			{"lat": -22.5110239466847, "lon": -43.2007810595411},
+			{"lat": -22.5111899618968, "lon": -43.2013389590162},
+			{"lat": -22.5115319030488, "lon": -43.2017547014135},
+			{"lat": -22.5115542035293, "lon": -43.2020899775404},
+			{"lat": -22.5111148593654, "lon": -43.2031881809235},
+			{"lat": -22.5105325660106, "lon": -43.2033571600914},
+			{"lat": -22.5102054895186, "lon": -43.2041832804680},
+			{"lat": -22.5104309741528, "lon": -43.2045373320580},
+			{"lat": -22.5105945122287, "lon": -43.2047170400620},
+			{"lat": -22.5103541607473, "lon": -43.2055726647377},
+			{"lat": -22.5102352237771, "lon": -43.2060661911964},
+			{"lat": -22.5103492050422, "lon": -43.2068762183189},
+			{"lat": -22.5106564584191, "lon": -43.2073724269867},
+			{"lat": -22.5108299076046, "lon": -43.2087591290474},
+			{"lat": -22.5110876031354, "lon": -43.2092741131783},
+			{"lat": -22.5109141542733, "lon": -43.2102021574974},
+			{"lat": -22.5107778728718, "lon": -43.2122004032135},
+			{"lat": -22.5110900809747, "lon": -43.2139223814011},
+			{"lat": -22.5112957414827, "lon": -43.214635848999}
+		],
+		"59-86":
+		[
+			{"lat": -22.5336118048522, "lon": -43.2012087106705},
+			{"lat": -22.5340552650838, "lon": -43.2021957635880},
+			{"lat": -22.5339041419246, "lon": -43.2029387354851},
+			{"lat": -22.5335795981878, "lon": -43.2038024067879},
+			{"lat": -22.5329404182163, "lon": -43.2044944167137}
+		],
+		"59-11":
+		[
+			{"lat": -22.5340800393564, "lon": -43.1986713409424},
+			{"lat": -22.5342361171716, "lon": -43.1981080770493},
+			{"lat": -22.5345334077602, "lon": -43.1977728009224},
+			{"lat": -22.5347093043904, "lon": -43.1968823075295},
+			{"lat": -22.5343005301868, "lon": -43.1961768865585},
+			{"lat": -22.5337654057640, "lon": -43.1953829526901},
+			{"lat": -22.5328660947718, "lon": -43.1945756077766}				
+		],
+		"59-49":
+		[
+			{"lat": -22.5334705909600, "lon": -43.1999400258064},
+			{"lat": -22.5328933467061, "lon": -43.1996369361877},
+			{"lat": -22.5326456016511, "lon": -43.1996610760689}
+		],
+		"60-73":
+		[
+			{"lat": -22.5042585092856, "lon": -43.1908097863197},
+			{"lat": -22.5043254142357, "lon": -43.1902974843979},
+			{"lat": -22.5041693026351, "lon": -43.1895759701729}
+		],
+		"61-63":
+		[
+			{"lat": -22.5091722200628, "lon": -43.1834900379181},
+			{"lat": -22.5094447858969, "lon": -43.1834658980370},
+			{"lat": -22.5097148733298, "lon": -43.1833371520042}
+		],
+		"62-90":
+		[
+			{"lat": -22.5085750512208, "lon": -43.1764546036720}
+		],
+		"63-70":
+		[
+			{"lat": -22.5104284963016, "lon": -43.1837582588196}
+		],
+		"64-50":
+		[
+			{"lat": -22.5101955780977, "lon": -43.1826478242874},
+			{"lat": -22.5100692074186, "lon": -43.1828999519348}
+		],
+		"64-104":
+		[
+			{"lat": -22.5098511557791, "lon": -43.1821677088738},
+			{"lat": -22.5093803612937, "lon": -43.1820523738861}
+		],
+		"67-24":
+		[
+			{"lat": -22.5083396520059, "lon": -43.1887686252594},
+			{"lat": -22.5085725733364, "lon": -43.1888115406036},
+			{"lat": -22.5088154057952, "lon": -43.1885808706284},
+			{"lat": -22.5094150514684, "lon": -43.1885325908661},
+			{"lat": -22.5100791188485, "lon": -43.1888544559479},
+			{"lat": -22.5105399995582, "lon": -43.1889188289642}
+		],
+		"67-39":
+		[
+			{"lat": -22.508057172419, "lon": -43.188339471817}
+		],
+		"68-11":
+		[
+			{"lat": -22.5230500937692, "lon": -43.1836777925491},
+			{"lat": -22.5236174687006, "lon": -43.1847587227821},
+			{"lat": -22.5242715574332, "lon": -43.1856599450111},
+			{"lat": -22.5250173139146, "lon": -43.1861588358879},
+			{"lat": -22.5259092432902, "lon": -43.1870386004448},
+			{"lat": -22.5274800160229, "lon": -43.1886559724808},
+			{"lat": -22.5279482713154, "lon": -43.1896698474884},
+			{"lat": -22.5291672141563, "lon": -43.1905710697174},
+			{"lat": -22.5300987567181, "lon": -43.1920194625855}
+		],
+		"68-31":
+		[
+			{"lat": -22.5220615179077, "lon": -43.1836080551147},
+			{"lat": -22.5219624121681, "lon": -43.1845307350159},
+			{"lat": -22.5215957203135, "lon": -43.1852710247040},
+			{"lat": -22.5213578656172, "lon": -43.1863653659821},
+			{"lat": -22.5210109934512, "lon": -43.1871056556702},
+			{"lat": -22.5210506360286, "lon": -43.1876957416534}
+		],
+		"68-40":
+		[
+			{"lat": -22.5242913782555, "lon": -43.1828141212463},
+			{"lat": -22.5251709243842, "lon": -43.1825754046440},	
+			{"lat": -22.5263056544976, "lon": -43.1820014119148},
+			{"lat": -22.5265410231138, "lon": -43.1803357601166},
+			{"lat": -22.5265410231138, "lon": -43.1803357601166},
+			{"lat": -22.5277302478846, "lon": -43.1778037548065},
+			{"lat": -22.5277599783727, "lon": -43.1754434108734}
+		],
+		"68-78":
+		[
+			{"lat": -22.5225545670287, "lon": -43.1832835063470},
+			{"lat": -22.5222894599620, "lon": -43.1831413492693},
+			{"lat": -22.5217419007654, "lon": -43.1820094570650},
+			{"lat": -22.5216948254391, "lon": -43.1814944729341},
+			{"lat": -22.5211646074980, "lon": -43.1809231624139},
+			{"lat": -22.5206096108382, "lon": -43.1802070126070},
+			{"lat": -22.5198663091255, "lon": -43.1795927882195},
+			{"lat": -22.5186051632518, "lon": -43.1784448027611},
+			{"lat": -22.5179807802887, "lon": -43.1781256198883},
+			{"lat": -22.5176933649607, "lon": -43.1775060296059},
+			{"lat": -22.5173018845007, "lon": -43.1772673130035},
+			{"lat": -22.5163702556554, "lon": -43.1772056221962},
+			{"lat": -22.5155129533507, "lon": -43.1766396760941},
+			{"lat": -22.5150223559981, "lon": -43.1766316294670},
+			{"lat": -22.5148092677166, "lon": -43.1764975190163},
+			{"lat": -22.5146630790545, "lon": -43.1761649250984}
+		],
+		"69-81":
+		[
+			{"lat": -22.5269275222873, "lon": -43.1720852851868}
+		],
+		"70-28":
+		[
+			{"lat": -22.5131417166819, "lon": -43.1846702098846}
+		],
+		"71-101":
+		[
+			{"lat": -22.5106589362662, "lon": -43.1769025325775}
+		],
+		"72-14":
+		[
+			{"lat": -22.5206641204145, "lon": -43.1951791048050},
+			{"lat": -22.5209168422845, "lon": -43.1959730386734}
+		],
+		"72-42":
+		[
+			{"lat": -22.5206641204145, "lon": -43.1933498382568},
+			{"lat": -22.5208078250639, "lon": -43.1934329867363},
+			{"lat": -22.5213355667185, "lon": -43.1933659315109},
+			{"lat": -22.5218608287113, "lon": -43.1930306553841},
+			{"lat": -22.5224728059675, "lon": -43.1936046481133}
+		],		
+		"73-6":
+		[
+			{"lat": -22.5039661094943, "lon": -43.1889805197716}
+		],
+		"73-54":
+		[
+			{"lat": -22.5038892924974, "lon": -43.1880256533623},
+			{"lat": -22.5036984888044, "lon": -43.1870010495186},
+			{"lat": -22.5032673210481, "lon": -43.1860622763634},
+			{"lat": -22.5030988183412, "lon": -43.1854507327080},
+			{"lat": -22.5037455702596, "lon": -43.1850188970566},
+			{"lat": -22.5041123094672, "lon": -43.1845548748970},
+			{"lat": -22.5044542681225, "lon": -43.1839111447334}
+		],
+		"74-37":
+		[
+			{"lat": -22.5087633703042, "lon": -43.1827390193939}
+		],
+		"76-12":
+		[
+			{"lat": -22.5199654163685, "lon": -43.2280844449997},
+			{"lat": -22.5184738448470, "lon": -43.2281488180161},
+			{"lat": -22.5178098177949, "lon": -43.2288140058517},
+			{"lat": -22.5171457875523, "lon": -43.2301872968674},
+			{"lat": -22.5166898843446, "lon": -43.2305198907852},
+			{"lat": -22.5150694335974, "lon": -43.2305306196213},
+			{"lat": -22.5140485894279, "lon": -43.2311689853668},
+			{"lat": -22.5128196019796, "lon": -43.2315874099731},
+			{"lat": -22.5112536182711, "lon": -43.2314962148666},
+			{"lat": -22.5103814171218, "lon": -43.2323223352432},
+			{"lat": -22.5095984136757, "lon": -43.2335346937180},
+			{"lat": -22.5085527502597, "lon": -43.2335776090622},
+			{"lat": -22.5065902516003, "lon": -43.2326281070709},
+			{"lat": -22.5045930337124, "lon": -43.2318449020386},
+			{"lat": -22.5023777235560, "lon": -43.2307451963425},
+			{"lat": -22.5004696539272, "lon": -43.2297474145889},
+			{"lat": -22.4977437945130, "lon": -43.2283204793930},
+			{"lat": -22.4965790927490, "lon": -43.2269042730331},
+			{"lat": -22.4943735668007, "lon": -43.2242327928543},
+			{"lat": -22.4926091207288, "lon": -43.2223284244537},
+			{"lat": -22.4909586494026, "lon": -43.2210516929627},
+			{"lat": -22.4899624094356, "lon": -43.2202684879303},
+			{"lat": -22.4897096309899, "lon": -43.2184553146362},
+			{"lat": -22.4890702481544, "lon": -43.2173717021942},
+			{"lat": -22.4878410387464, "lon": -43.2164490222931}
+		],
+		"76-10":
+		[
+			{"lat": -22.5200719565754, "lon": -43.2277277112007},
+			{"lat": -22.5191304356233, "lon": -43.2276687026024},
+			{"lat": -22.5184862333811, "lon": -43.2272797822952},
+			{"lat": -22.5180303345952, "lon": -43.2266950607300}
+		],
+		
+		"77-3":
+		[
+			{"lat": -22.5052026094760, "lon": -43.1809687614441},
+			{"lat": -22.5045385186758, "lon": -43.1817251443863}
+		],
+		"78-68":
+		[
+			{"lat": -22.5146630790545, "lon": -43.1761649250984},
+			{"lat": -22.5148092677166, "lon": -43.1764975190163},
+			{"lat": -22.5150223559981, "lon": -43.1766316294670},
+			{"lat": -22.5155129533507, "lon": -43.1766396760941},
+			{"lat": -22.5163702556554, "lon": -43.1772056221962},
+			{"lat": -22.5173018845007, "lon": -43.1772673130035},
+			{"lat": -22.5176933649607, "lon": -43.1775060296059},
+			{"lat": -22.5179807802887, "lon": -43.1781256198883},
+			{"lat": -22.5186051632518, "lon": -43.1784448027611},
+			{"lat": -22.5198663091255, "lon": -43.1795927882195},
+			{"lat": -22.5206096108382, "lon": -43.1802070126070},
+			{"lat": -22.5211646074980, "lon": -43.1809231624139},
+			{"lat": -22.5216948254391, "lon": -43.1814944729341},
+			{"lat": -22.5217419007654, "lon": -43.1820094570650},
+			{"lat": -22.5222894599620, "lon": -43.1831413492693},
+			{"lat": -22.5225545670287, "lon": -43.1832835063470}
+		],
+		"78-98":
+		[
+			{"lat": -22.5138354996453, "lon": -43.1769347190857},
+			{"lat": -22.5133399407411, "lon": -43.1778144836426}
+		],
+		"79-4":
+		[
+			{"lat": -22.5027841142066, "lon": -43.1707763671875},
+			{"lat": -22.503626627605, "lon": -43.1737911701202},
+			{"lat": -22.5043749734371, "lon": -43.1764841079712}
+		],
+		"79-19":
+		[
+			{"lat": -22.5053265066604, "lon": -43.1719189882278}
+		],
+		"80-38":
+		[
+			{"lat": -22.5078886755485, "lon": -43.1696739792824}
+		],
+		"81-33":
+		[
+
+		],
+		"81-40":
+		[
+			{"lat": -22.5262957442313, "lon": -43.1727424263954}
+		],
+		"82-14":
+		[
+			{"lat": -22.5219425910117, "lon": -43.1975984573364},
+			{"lat": -22.5212884912537, "lon": -43.1978613138199},
+			{"lat": -22.5209168422845, "lon": -43.1976306438446},
+			{"lat": -22.5213975080951, "lon": -43.1974750757217},
+			{"lat": -22.5215213907649, "lon": -43.1972122192383},
+			{"lat": -22.5217840216577, "lon": -43.1971317529678},
+			{"lat": -22.5218633063574, "lon": -43.1967669725418},
+			{"lat": -22.5215114801554, "lon": -43.1965363025665}
+		],
+		"82-56":
+		[
+			{"lat": -22.5220813390471, "lon": -43.1991434097290},
+			{"lat": -22.5215907650115, "lon": -43.2002699375153},
+			{"lat": -22.5217939322477, "lon": -43.2030647993088},
+			{"lat": -22.5213776868576, "lon": -43.2040411233902},
+			{"lat": -22.5213132678161, "lon": -43.2049638032913},
+			{"lat": -22.5214966142398, "lon": -43.2060259580612},
+			{"lat": -22.5229138243339, "lon": -43.2081395387650},
+			{"lat": -22.5237363941550, "lon": -43.2090783119202},
+			{"lat": -22.5240089312686, "lon": -43.2098883390427},
+			{"lat": -22.5246679733397, "lon": -43.2104998826981},
+			{"lat": -22.5251387157515, "lon": -43.2110202312469}
+		],
+		"82-86":
+		[
+			{"lat": -22.5227205692680, "lon": -43.1979686021805},
+			{"lat": -22.5231214030493, "lon": -43.1983404699903},
+			{"lat": -22.5236417030247, "lon": -43.1991075817685},
+			{"lat": -22.5238993746681, "lon": -43.1991451326947},
+			{"lat": -22.5240628968079, "lon": -43.198839360867},
+			{"lat": -22.5244295821148, "lon": -43.1988018099408},
+			{"lat": -22.5248458183107, "lon": -43.1985657755475},
+			{"lat": -22.5259855062390, "lon": -43.1994938198667},
+			{"lat": -22.5269220253688, "lon": -43.2008134667020},
+			{"lat": -22.5267739137709, "lon": -43.2019704580307},
+			{"lat": -22.5276559216364, "lon": -43.2026410102844},
+			{"lat": -22.5273933019057, "lon": -43.2031828165054},
+			{"lat": -22.5280820582503, "lon": -43.2039338350296},
+			{"lat": -22.5287757662051, "lon": -43.2032632827759},
+			{"lat": -22.5297519064984, "lon": -43.2036066055298},
+			{"lat": -22.5313424553447, "lon": -43.2037031650543},
+			{"lat": -22.5317636256478, "lon": -43.2034081220627},
+			{"lat": -22.5324077659801, "lon": -43.2035905122757},
+			{"lat": -22.5323284873321, "lon": -43.2043629884720},
+			{"lat": -22.5325019093155, "lon": -43.2047653198242}
+		],
+		"83-97":
+		[
+			{"lat": -22.5089318661087, "lon": -43.1695237755776},
+			{"lat": -22.5092862022043, "lon": -43.1695291399956},
+			{"lat": -22.5099651373608, "lon": -43.1699609756470},
+			{"lat": -22.5102773472991, "lon": -43.1701835989952},
+			{"lat": -22.5108745087885, "lon": -43.1711116433144},
+			{"lat": -22.5113155641661, "lon": -43.1710767745972},
+			{"lat": -22.5113155641661, "lon": -43.1710767745972},
+			{"lat": -22.5118879429234, "lon": -43.1713154911995},
+			{"lat": -22.5122174932540, "lon": -43.1719404459000}
+		],
+		"84-62":
+		[
+			{"lat": -22.5066893683621, "lon": -43.1775274872780}
+		],
+		"85-64":
+		[
+			{"lat": -22.5104359298549, "lon": -43.1820121407509},
+			{"lat": -22.5110033565724, "lon": -43.1812906265259},
+			{"lat": -22.5114617563684, "lon": -43.1805020570755}
+		],
+		"86-43":
+		[
+			{"lat": -22.5329255535306, "lon": -43.2050684094429},
+			{"lat": -22.5333987452401, "lon": -43.2056263089180},
+			{"lat": -22.5340057165252, "lon": -43.2063397765160},
+			{"lat": -22.5341667492755, "lon": -43.2067635655403},
+			{"lat": -22.5338570707429, "lon": -43.2077237963677},
+			{"lat": -22.5337059473668, "lon": -43.2089120149612},
+			{"lat": -22.5331658657532, "lon": -43.2097220420837},
+			{"lat": -22.5321872721276, "lon": -43.2109853625298},
+			{"lat": -22.5317239861446, "lon": -43.2114949822426},
+			{"lat": -22.5308147519168, "lon": -43.2121333479881}
+		],
+		"86-82":
+		[
+			{"lat": -22.5325019093155, "lon": -43.2047653198242},
+			{"lat": -22.5323284873321, "lon": -43.204362988472},
+			{"lat": -22.5324077659801, "lon": -43.2035905122757},
+			{"lat": -22.5317636256478, "lon": -43.2034081220627},
+			{"lat": -22.5313424553447, "lon": -43.2037031650543},
+			{"lat": -22.5297519064984, "lon": -43.2036066055298},
+			{"lat": -22.5287757662051, "lon": -43.2032632827759},
+			{"lat": -22.5280820582503, "lon": -43.2039338350296},
+			{"lat": -22.5273933019057, "lon": -43.2031828165054},
+			{"lat": -22.5276559216364, "lon": -43.2026410102844},
+			{"lat": -22.5267739137709, "lon": -43.2019704580307},
+			{"lat": -22.5269220253688, "lon": -43.2008134667020},
+			{"lat": -22.5259855062390, "lon": -43.1994938198667},
+			{"lat": -22.5248458183107, "lon": -43.1985657755475},
+			{"lat": -22.5244295821148, "lon": -43.1988018099408},
+			{"lat": -22.5240628968079, "lon": -43.198839360867},
+			{"lat": -22.5238993746681, "lon": -43.1991451326947},
+			{"lat": -22.5236417030247, "lon": -43.1991075817685},
+			{"lat": -22.5231214030493, "lon": -43.1983404699903},
+			{"lat": -22.522720569268, "lon": -43.1979686021805}
+		],
+		"86-59":
+		[
+			{"lat": -22.5329404182163, "lon": -43.2044944167137}, 
+			{"lat": -22.5335795981878, "lon": -43.2038024067879}, 
+			{"lat": -22.5339041419246, "lon": -43.2029387354851}, 
+			{"lat": -22.5340552650838, "lon": -43.2021957635880}, 
+			{"lat": -22.5336118048522, "lon": -43.2012087106705}
+		],
+		"87-98":
+		[
+			{"lat": -22.5122740670059, "lon": -43.1784183922403}
+		],
+		"87-2":
+		[
+			{"lat": -22.511580276206, "lon": -43.1784049811952}
+		],
+		"88-35":
+		[
+			{"lat": -22.5174926694203, "lon": -43.1924378871918},
+			{"lat": -22.5189000097816, "lon": -43.1944012641907}
+			
+		],
+		"88-17":
+		[
+			{"lat": -22.5165461754130, "lon": -43.1917726993561},
+			{"lat": -22.5168038602875, "lon": -43.1925612688065},
+			{"lat": -22.5168435040717, "lon": -43.1932908296585},
+			{"lat": -22.5165461754130, "lon": -43.1934624910355},
+			{"lat": -22.5161596472004, "lon": -43.1933605670929},
+			{"lat": -22.5158722280852, "lon": -43.1937736272812},
+			{"lat": -22.5159069166309, "lon": -43.1941223144531},
+			{"lat": -22.5158325840224, "lon": -43.1948196887970},
+			{"lat": -22.5158821390992, "lon": -43.1956726312637},
+			{"lat": -22.5154163206766, "lon": -43.1959462165833},
+			{"lat": -22.5155649863011, "lon": -43.1963270902634},
+			{"lat": -22.5162438906209, "lon": -43.1967777013779},
+			{"lat": -22.5168286376540, "lon": -43.1976950168610},
+			{"lat": -22.5172250749132, "lon": -43.1987518072128},
+			{"lat": -22.5173142731398, "lon": -43.1996369361877},
+			{"lat": -22.5170764110742, "lon": -43.2001036405563}
+		],
+		"88-7":
+		[
+			{"lat": -22.5175620456895, "lon": -43.1914347410202}
+		],
+		"88-55":
+		[
+			{"lat": -22.5162042466648, "lon": -43.1909090280533},
+			{"lat": -22.5160258487212, "lon": -43.1901472806931},
+			{"lat": -22.5158573615630, "lon": -43.1889402866364}
+		],
+		"89-2":
+		[
+			{"lat": -22.5115856479443, "lon": -43.1784152984619}
+		],
+		"91-3":
+		[
+			{"lat": -22.5044071869085, "lon": -43.1822508573532}
+		],
+		"92-73":
+		[
+			{"lat": -22.5069569832639, "lon": -43.1886988878250},
+			{"lat": -22.5060748432939, "lon": -43.1890636682510},
+			{"lat": -22.5049498588757, "lon": -43.1890287995339},
+			{"lat": -22.5041940822660, "lon": -43.1889161467552}
+		],
+		"93-83":
+		[
+			{"lat": -22.5093099467611, "lon": -43.1707929401454}
+		],
+		"93-38":
+		[
+			{"lat": -22.5075169905493, "lon": -43.1700950860977},
+			{"lat": -22.5077141885042, "lon": -43.1704710750636},
+			{"lat": -22.5083485293956, "lon": -43.1717746286449}
+		],
+		"94-88":
+		[
+			{"lat": -22.5140262893498, "lon": -43.1891441345215},
+			{"lat": -22.5147101567762, "lon": -43.1895062327385},
+			{"lat": -22.5154881757484, "lon": -43.1900346279144},
+			{"lat": -22.5157929399483, "lon": -43.1902840733528},
+			{"lat": -22.5160184154685, "lon": -43.1904342770577},
+			{"lat": -22.5161745136901, "lon": -43.1908956170082}
+		],
+		"94-55":
+		[
+			{"lat": -22.5144053901888, "lon": -43.1881088018417}
+		],
+		"94-24":
+		[
+			{"lat": -22.5131516278917, "lon": -43.1893426179886},
+			{"lat": -22.5127328786623, "lon": -43.1898254156113},
+			{"lat": -22.5123661623190, "lon": -43.1899300217629},
+			{"lat": -22.5120514792759, "lon": -43.1902089715004},
+			{"lat": -22.5120291788756, "lon": -43.1905201077461},
+			{"lat": -22.5119275881175, "lon": -43.1905281543732},
+			{"lat": -22.5119226324689, "lon": -43.1900426745415},
+			{"lat": -22.5120836909589, "lon": -43.1896296143532},
+			{"lat": -22.5118854650984, "lon": -43.1893882155418},
+			{"lat": -22.5115583918071, "lon": -43.1895089149475},
+			{"lat": -22.5112214063947, "lon": -43.1896376609802},
+			{"lat": -22.5108621195722, "lon": -43.1895035505295}
+		],
+		"95-18":
+		[
+			{"lat": -22.5084164665306, "lon": -43.1684482097626},
+			{"lat": -22.5085577060292, "lon": -43.1676730513573},
+			{"lat": -22.5095934579436, "lon": -43.1672117114067},
+			{"lat": -22.5108968093751, "lon": -43.1670373678207},
+			{"lat": -22.5123934182969, "lon": -43.1669059395790},
+			{"lat": -22.5134687862271, "lon": -43.1674396991730},
+			{"lat": -22.5140163782028, "lon": -43.1678366661072},
+			{"lat": -22.5145813124472, "lon": -43.1677347421646},
+			{"lat": -22.5154881757484, "lon": -43.1682068109512}
+		],
+		"96-33":
+		[
+			{"lat": -22.5150446559155, "lon": -43.1746387481690},
+			{"lat": -22.5151660665141, "lon": -43.1724768877029},
+			{"lat": -22.5164262697328, "lon": -43.1706102700900},
+			{"lat": -22.5185184435645, "lon": -43.1698161363602},
+			{"lat": -22.5210555913499, "lon": -43.1702131032944},
+			{"lat": -22.5226611061164, "lon": -43.1706744432449}
+		],
+		"97-96":
+		[
+			{"lat": -22.5126709334023, "lon": -43.1731420755386},
+			{"lat": -22.5131119830486, "lon": -43.1741130352020},
+			{"lat": -22.5138057661611, "lon": -43.1740540266037},
+			{"lat": -22.5142121232243, "lon": -43.1748640537262}
+		],		
+		"98-78":
+		[
+			{"lat": -22.5133399407411, "lon": -43.1778144836426},
+			{"lat": -22.5138354996453, "lon": -43.1769347190857}
+		],
+		"99-39":
+		[
+			{"lat": -22.5081661996964, "lon": -43.1861937046051},
+			{"lat": -22.5081463765614, "lon": -43.1874436140060}
+		],
+		"99-61":
+		[
+			{"lat": -22.5081092081757, "lon": -43.1842464208603}
+		],
+		"100-41":
+		[
+			{"lat": -22.5092862022043, "lon": -43.1752341985703}
+		],
+		"102-58":
+		[
+			{"lat": -22.5073237139549, "lon": -43.1939613819122},
+			{"lat": -22.5090185918105, "lon": -43.1949216127396},
+			{"lat": -22.5092465562527, "lon": -43.1956404447556},
+			{"lat": -22.5096777053657, "lon": -43.1984621286392},
+			{"lat": -22.5104111513425, "lon": -43.1991434097290}
+
+		],
+		"103-31":
+		[
+			{"lat": -22.5167369613759, "lon": -43.1841230392456},
+			{"lat": -22.5166403295575, "lon": -43.1847265362740},
+			{"lat": -22.5171482652830, "lon": -43.1853488087654},
+			{"lat": -22.5177503525301, "lon": -43.1859040260315},
+			{"lat": -22.5190982255825, "lon": -43.1869447231293},
+			{"lat": -22.5195342993437, "lon": -43.1876099109650}
+		],
+		"103-53":
+		[
+			{"lat": -22.5154708314241, "lon": -43.1825941801071},
+			{"lat": -22.5149356340627, "lon": -43.1819370388985},
+			{"lat": -22.5145367124593, "lon": -43.1817573308945},
+			{"lat": -22.5139197444823, "lon": -43.1812477111816},
+			{"lat": -22.5127700458050, "lon": -43.1806603074074},
+			{"lat": -22.5124479302366, "lon": -43.1802392005920}
+		],
+		"104-84":
+		[
+			{"lat": -22.5077647806598, "lon": -43.180947303772}
+		],
+		"105-17":
+		[
+			{"lat": -22.5098263771619, "lon": -43.1954339146614},
+			{"lat": -22.5103392936316, "lon": -43.1956109404564},
+			{"lat": -22.5108224740725, "lon": -43.1957504153252},
+			{"lat": -22.5110950366532, "lon": -43.1955170631409},
+			{"lat": -22.5116674163235, "lon": -43.1954661011696},
+			{"lat": -22.5126188993625, "lon": -43.1953883171082},
+			{"lat": -22.5129806594246, "lon": -43.1950530409813},
+			{"lat": -22.5134142746900, "lon": -43.1946185231209},
+			{"lat": -22.5137289546308, "lon": -43.1945300102234},
+			{"lat": -22.5137462991737, "lon": -43.1945514678955},
+			{"lat": -22.5135183421513, "lon": -43.1947928667068},
+			{"lat": -22.5136521430578, "lon": -43.1952488422394},
+			{"lat": -22.5133597631313, "lon": -43.1957423686981},
+			{"lat": -22.5139891225449, "lon": -43.1964236497879},
+			{"lat": -22.5134935641914, "lon": -43.1970244646072},
+			{"lat": -22.5133845411152, "lon": -43.1978505849838},
+			{"lat": -22.5128939362083, "lon": -43.1979310512543},
+			{"lat": -22.5129434923386, "lon": -43.1985747814179},
+			{"lat": -22.5131764059128, "lon": -43.1988805532456},
+			{"lat": -22.5147275011959, "lon": -43.1981885433197},
+			{"lat": -22.5150000560770, "lon": -43.1989502906799},
+			{"lat": -22.5152379217160, "lon": -43.1999427080154}
+		],
+		"105-34":
+		[
+			{"lat": -22.5090359369443, "lon": -43.1946748495102},
+			{"lat": -22.5082900942254, "lon": -43.1941947340965},
+			{"lat": -22.5074376976202, "lon": -43.1938084959984}
+		],
+		"106-60":
+		[
+			{"lat": -22.5069074249879, "lon": -43.1915742158890},
+			{"lat": -22.5060797991522, "lon": -43.1922045350075},
+			{"lat": -22.5052100433102, "lon": -43.1917378306389}		
+		],
+		"106-92":
+		[
+			{"lat": -22.5079555787422, "lon": -43.1906032562256},
+			{"lat": -22.5075070789357, "lon": -43.1895893812180},
+			{"lat": -22.5075938055311, "lon": -43.1888222694397}
+
+		],
+		"107-42":
+		[
+			{"lat": -22.5278640350307, "lon": -43.1971210241318},
+			{"lat": -22.5270712204222, "lon": -43.1979927420616},
+			{"lat": -22.5267317952769, "lon": -43.1979900598526},
+			{"lat": -22.5263031769311, "lon": -43.1974938511848},
+			{"lat": -22.5251882674910, "lon": -43.1960400938988},
+			{"lat": -22.5245763022624, "lon": -43.1950289011002},
+			{"lat": -22.5242765126390, "lon": -43.1948652863503},
+			{"lat": -22.5236818866678, "lon": -43.1947982311249}
+		],
+		"107-47":
+		[
+			{"lat": -22.5291052762632, "lon": -43.1963914632797}
+		],
+		"107-31":
+		[
+			{"lat": -22.5280027771193, "lon": -43.1958013772964},
+			{"lat": -22.5275716851734, "lon": -43.1947875022888},
+			{"lat": -22.5270216693580, "lon": -43.1944602727890},
+			{"lat": -22.5262932666646, "lon": -43.1936931610107},
+			{"lat": -22.5251932226639, "lon": -43.1926953792572},
+			{"lat": -22.5239321254092, "lon": -43.1915500760078},
+			{"lat": -22.5234688117386, "lon": -43.1909680366516},
+			{"lat": -22.5230030188886, "lon": -43.1907320022583},
+			{"lat": -22.5226016429392, "lon": -43.1901928782463},
+			{"lat": -22.5216229744713, "lon": -43.1893453001976},
+			{"lat": -22.5210035604667, "lon": -43.1887471675873}
+		]
+	}
+
+}
